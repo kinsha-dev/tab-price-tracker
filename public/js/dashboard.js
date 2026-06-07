@@ -8,7 +8,6 @@ const PRODUCTS = [
   { id: 'lenovo-idea-tab',   name: 'Lenovo IdeaTab',   color: '#4F81BD', emoji: '💻' },
   { id: 'lenovo-legion-tab', name: 'Lenovo Legion Tab', color: '#C0504D', emoji: '🎮' },
   { id: 'xiaomi-pad-7',      name: 'Xiaomi Pad 7',      color: '#FF6B00', emoji: '📱' },
-  { id: 'ipad-10',           name: 'iPad 10',            color: '#70AD47', emoji: '🍎' },
   { id: 'ipad-11-2025',     name: 'iPad 11 (2025)',     color: '#9B59B6', emoji: '🍎' },
 ];
 
@@ -432,7 +431,6 @@ function buildDemoData() {
       'lenovo-idea-tab':   { IN: 22000, AE: 900 },
       'lenovo-legion-tab': { IN: 55000, AE: 2200 },
       'xiaomi-pad-7':      { IN: 26000, AE: 1100 },
-      'ipad-10':           { IN: 35000, AE: 1500 },
       'ipad-11-2025':      { IN: 65000, AE: 2800 },
     };
 
