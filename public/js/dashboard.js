@@ -8,7 +8,7 @@ const PRODUCTS = [
   { id: 'lenovo-idea-tab',   name: 'Lenovo IdeaTab',   color: '#4F81BD', emoji: '💻' },
   { id: 'lenovo-legion-tab', name: 'Lenovo Legion Tab', color: '#C0504D', emoji: '🎮' },
   { id: 'xiaomi-pad-7',      name: 'Xiaomi Pad 7',      color: '#FF6B00', emoji: '📱' },
-  { id: 'ipad-11',           name: 'iPad 11',            color: '#70AD47', emoji: '🍎' },
+  { id: 'ipad-11',           name: 'iPad 10',            color: '#70AD47', emoji: '🍎' },
 ];
 
 const STORE_META = {

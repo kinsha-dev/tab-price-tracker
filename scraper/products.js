@@ -28,11 +28,11 @@ const PRODUCTS = [
   },
   {
     id: 'ipad-11',
-    name: 'iPad 11',
+    name: 'iPad 10',
     color: '#70AD47',
     queries: {
-      in: 'Apple iPad 11th generation',
-      ae: 'Apple iPad 11th generation'
+      in: 'Apple iPad 10th generation',
+      ae: 'Apple iPad 10th generation'
     }
   }
 ];
