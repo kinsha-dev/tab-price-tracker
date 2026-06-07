@@ -30,6 +30,7 @@ jobs:
         run: node scraper/index.js
         env:
           NODE_ENV: production
+          BRAVE_API_KEY: ${{ secrets.BRAVE_API_KEY }}
 
       - name: Commit updated price data
         run: |

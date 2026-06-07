@@ -2,109 +2,117 @@ const { chromium } = require('playwright');
 const fs = require('fs');
 const path = require('path');
 const PRODUCTS = require('./products');
-
-const IN_STORES = [
-  require('./stores/amazon-in'),
-  require('./stores/flipkart'),
-  require('./stores/croma'),
-  require('./stores/reliance'),
-  require('./stores/vijay-sales'),
-  require('./stores/jiomart'),
-  require('./stores/lenovo-in'),
-  require('./stores/mi-in'),
-];
-
-const AE_STORES = [
-  require('./stores/amazon-ae'),
-  require('./stores/noon'),
-  require('./stores/sharaf'),
-  require('./stores/emax'),
-  require('./stores/jumbo'),
-  require('./stores/istyle'),
-];
+const { searchGoogle } = require('./google-search');
+const { extractPrice } = require('./price-extractor');
 
 const DATA_PATH = path.join(__dirname, '..', 'public', 'data', 'prices.json');
 const MAX_HISTORY_ENTRIES = 168; // 7 days × 24 hrs
 
-function loadExisting() {
-  try {
-    return JSON.parse(fs.readFileSync(DATA_PATH, 'utf8'));
-  } catch {
-    return { history: [] };
-  }
-}
+// Google search queries per product per region
+const QUERIES = {
+  'lenovo-idea-tab': {
+    IN: 'Lenovo IdeaTab tablet buy online India price',
+    AE: 'Lenovo IdeaTab tablet buy online UAE price',
+  },
+  'lenovo-legion-tab': {
+    IN: 'Lenovo Legion Tab gaming tablet buy India price',
+    AE: 'Lenovo Legion Tab gaming tablet buy UAE price',
+  },
+  'xiaomi-pad-7': {
+    IN: 'Xiaomi Pad 7 tablet buy online India price',
+    AE: 'Xiaomi Pad 7 tablet buy online UAE price',
+  },
+  'ipad-10': {
+    IN: 'Apple iPad 10th generation 64GB buy online India price',
+    AE: 'Apple iPad 10th generation 64GB buy online UAE price',
+  },
+  'ipad-11-2025': {
+    IN: 'Apple iPad 11th generation 2025 A16 chip buy India price',
+    AE: 'Apple iPad 11th generation 2025 A16 chip buy UAE price',
+  },
+};
 
-async function scrapeStore(page, storeModule, query) {
-  try {
-    console.log(`  → ${storeModule.STORE.name}: "${query}"`);
-    const result = await storeModule.scrape(page, query);
-    if (result) {
-      console.log(`    ✅ ${result.price} ${result.currency}`);
-    } else {
-      console.log(`    ⚠️  No result`);
-    }
-    return result;
-  } catch (err) {
-    console.log(`    ❌ Error: ${err.message.slice(0, 60)}`);
-    return null;
-  }
+function loadExisting() {
+  try { return JSON.parse(fs.readFileSync(DATA_PATH, 'utf8')); }
+  catch { return { history: [] }; }
 }
 
 async function run() {
-  console.log('🚀 Tab Shopping Scraper starting...\n');
+  console.log('🚀 Tab Shopping Scraper — Google AI Search mode\n');
+
   const browser = await chromium.launch({
     headless: true,
-    args: ['--no-sandbox', '--disable-setuid-sandbox']
+    args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-blink-features=AutomationControlled'],
   });
 
   const context = await browser.newContext({
     viewport: { width: 1440, height: 900 },
-    userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+    userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
     locale: 'en-US',
-    extraHTTPHeaders: { 'Accept-Language': 'en-US,en;q=0.9' }
+    extraHTTPHeaders: { 'Accept-Language': 'en-US,en;q=0.9' },
   });
-
+  context.setDefaultTimeout(30000);
   const page = await context.newPage();
-  page.setDefaultTimeout(30000);
 
-  const snapshot = {
-    timestamp: new Date().toISOString(),
-    products: {}
-  };
+  const snapshot = { timestamp: new Date().toISOString(), products: {} };
 
   for (const product of PRODUCTS) {
-    console.log(`\n📦 Scraping: ${product.name}`);
+    console.log(`\n📦 ${product.name}`);
     const productData = { id: product.id, name: product.name, stores: {} };
 
-    for (const store of IN_STORES) {
-      const result = await scrapeStore(page, store, product.queries.in);
-      if (result) productData.stores[store.STORE.id] = result;
-    }
+    for (const region of ['IN', 'AE']) {
+      const query = QUERIES[product.id]?.[region];
+      if (!query) continue;
 
-    for (const store of AE_STORES) {
-      const result = await scrapeStore(page, store, product.queries.ae);
-      if (result) productData.stores[store.STORE.id] = result;
+      // Step 1 — Google Search → get store links
+      let links = [];
+      try {
+        links = await searchGoogle(page, query, region, product.id);
+      } catch (err) {
+        console.log(`  ❌ Google search failed [${region}]: ${err.message.slice(0, 60)}`);
+        continue;
+      }
+
+      // Step 2 — visit each link → extract price
+      for (const link of links) {
+        console.log(`  → [${region}] ${link.title?.slice(0, 40) || link.url.slice(0, 50)}`);
+        const result = await extractPrice(page, link.url, region);
+        if (result && result.price) {
+          console.log(`    ✅ ${result.name}: ${result.currency} ${result.price}`);
+          // Use domain as store key, avoid duplicates (keep cheapest)
+          const key = result.domain.split('.')[0];
+          if (!productData.stores[key] || result.price < productData.stores[key].price) {
+            productData.stores[key] = result;
+          }
+        } else {
+          console.log(`    ⚠️  No price found`);
+        }
+        await page.waitForTimeout(800); // gentle pacing
+      }
     }
 
     // Find cheapest per region
-    const inPrices = Object.values(productData.stores).filter(s => s.region === 'IN');
-    const aePrices = Object.values(productData.stores).filter(s => s.region === 'AE');
+    const inStores = Object.values(productData.stores).filter(s => s.region === 'IN');
+    const aeStores = Object.values(productData.stores).filter(s => s.region === 'AE');
 
-    if (inPrices.length) {
-      const cheapest = inPrices.reduce((a, b) => a.price < b.price ? a : b);
-      productData.cheapestIN = { storeId: cheapest.id, storeName: cheapest.name, price: cheapest.price, url: cheapest.url, icon: cheapest.icon };
+    if (inStores.length) {
+      const c = inStores.reduce((a, b) => a.price < b.price ? a : b);
+      productData.cheapestIN = { storeId: c.id, storeName: c.name, price: c.price, url: c.url, icon: c.icon };
     }
-    if (aePrices.length) {
-      const cheapest = aePrices.reduce((a, b) => a.price < b.price ? a : b);
-      productData.cheapestAE = { storeId: cheapest.id, storeName: cheapest.name, price: cheapest.price, url: cheapest.url, icon: cheapest.icon };
+    if (aeStores.length) {
+      const c = aeStores.reduce((a, b) => a.price < b.price ? a : b);
+      productData.cheapestAE = { storeId: c.id, storeName: c.name, price: c.price, url: c.url, icon: c.icon };
     }
 
     snapshot.products[product.id] = productData;
+
+    const totalStores = Object.keys(productData.stores).length;
+    console.log(`  📊 ${totalStores} stores scraped for ${product.name}`);
   }
 
   await browser.close();
 
-  // Merge with history
+  // Persist
   const existing = loadExisting();
   existing.history.push(snapshot);
   if (existing.history.length > MAX_HISTORY_ENTRIES) {
@@ -114,11 +122,11 @@ async function run() {
 
   fs.mkdirSync(path.dirname(DATA_PATH), { recursive: true });
   fs.writeFileSync(DATA_PATH, JSON.stringify(existing, null, 2));
-  console.log(`\n✅ Data saved → ${DATA_PATH}`);
-  console.log(`📊 History: ${existing.history.length} entries`);
+
+  console.log(`\n✅ Done — ${existing.history.length} history entries saved`);
 }
 
 run().catch(err => {
-  console.error('Fatal error:', err);
+  console.error('Fatal:', err);
   process.exit(1);
 });
