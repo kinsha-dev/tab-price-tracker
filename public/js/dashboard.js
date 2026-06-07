@@ -429,6 +429,90 @@ function buildDemoData() {
   const now = Date.now();
   const history = [];
 
+  // Per-product search URLs for each store so links actually land on results
+  const SEARCH_URLS = {
+    'lenovo-idea-tab': {
+      'amazon-in':   'https://www.amazon.in/s?k=Lenovo+IdeaTab&i=electronics',
+      'flipkart':    'https://www.flipkart.com/search?q=Lenovo+IdeaTab&otracker=search',
+      'croma':       'https://www.croma.com/searchB?q=Lenovo+IdeaTab',
+      'reliance':    'https://www.reliancedigital.in/search?q=Lenovo+IdeaTab',
+      'vijay-sales': 'https://www.vijaysales.com/search/lenovo-ideatab',
+      'jiomart':     'https://www.jiomart.com/catalogsearch/result/?q=Lenovo+IdeaTab',
+      'lenovo-in':   'https://www.lenovo.com/in/en/search?q=IdeaTab&type=products',
+      'mi-in':       'https://www.mi.com/in/search#q=tablet',
+      'amazon-ae':   'https://www.amazon.ae/s?k=Lenovo+IdeaTab&i=electronics',
+      'noon':        'https://www.noon.com/uae-en/search/?q=Lenovo+IdeaTab',
+      'sharaf':      'https://uae.sharafdg.com/search/?q=Lenovo+IdeaTab',
+      'emax':        'https://www.emaxuae.com/catalogsearch/result/?q=Lenovo+IdeaTab',
+      'jumbo':       'https://www.jumbo.ae/search?q=Lenovo+IdeaTab',
+      'istyle':      'https://istyle.ae/search?type=product&q=Lenovo+IdeaTab',
+    },
+    'lenovo-legion-tab': {
+      'amazon-in':   'https://www.amazon.in/s?k=Lenovo+Legion+Tab&i=electronics',
+      'flipkart':    'https://www.flipkart.com/search?q=Lenovo+Legion+Tab&otracker=search',
+      'croma':       'https://www.croma.com/searchB?q=Lenovo+Legion+Tab',
+      'reliance':    'https://www.reliancedigital.in/search?q=Lenovo+Legion+Tab',
+      'vijay-sales': 'https://www.vijaysales.com/search/lenovo-legion-tab',
+      'jiomart':     'https://www.jiomart.com/catalogsearch/result/?q=Lenovo+Legion+Tab',
+      'lenovo-in':   'https://www.lenovo.com/in/en/search?q=Legion+Tab&type=products',
+      'mi-in':       'https://www.mi.com/in/search#q=tablet',
+      'amazon-ae':   'https://www.amazon.ae/s?k=Lenovo+Legion+Tab&i=electronics',
+      'noon':        'https://www.noon.com/uae-en/search/?q=Lenovo+Legion+Tab',
+      'sharaf':      'https://uae.sharafdg.com/search/?q=Lenovo+Legion+Tab',
+      'emax':        'https://www.emaxuae.com/catalogsearch/result/?q=Lenovo+Legion+Tab',
+      'jumbo':       'https://www.jumbo.ae/search?q=Lenovo+Legion+Tab',
+      'istyle':      'https://istyle.ae/search?type=product&q=Lenovo+Legion+Tab',
+    },
+    'xiaomi-pad-7': {
+      'amazon-in':   'https://www.amazon.in/s?k=Xiaomi+Pad+7&i=electronics',
+      'flipkart':    'https://www.flipkart.com/search?q=Xiaomi+Pad+7&otracker=search',
+      'croma':       'https://www.croma.com/searchB?q=Xiaomi+Pad+7',
+      'reliance':    'https://www.reliancedigital.in/search?q=Xiaomi+Pad+7',
+      'vijay-sales': 'https://www.vijaysales.com/search/xiaomi-pad-7',
+      'jiomart':     'https://www.jiomart.com/catalogsearch/result/?q=Xiaomi+Pad+7',
+      'lenovo-in':   'https://www.lenovo.com/in/en/search?q=tablet&type=products',
+      'mi-in':       'https://www.mi.com/in/product/xiaomi-pad-7/',
+      'amazon-ae':   'https://www.amazon.ae/s?k=Xiaomi+Pad+7&i=electronics',
+      'noon':        'https://www.noon.com/uae-en/search/?q=Xiaomi+Pad+7',
+      'sharaf':      'https://uae.sharafdg.com/search/?q=Xiaomi+Pad+7',
+      'emax':        'https://www.emaxuae.com/catalogsearch/result/?q=Xiaomi+Pad+7',
+      'jumbo':       'https://www.jumbo.ae/search?q=Xiaomi+Pad+7',
+      'istyle':      'https://istyle.ae/search?type=product&q=Xiaomi+Pad+7',
+    },
+    'ipad-10': {
+      'amazon-in':   'https://www.amazon.in/s?k=Apple+iPad+10th+generation&i=electronics',
+      'flipkart':    'https://www.flipkart.com/search?q=Apple+iPad+10th+generation&otracker=search',
+      'croma':       'https://www.croma.com/searchB?q=Apple+iPad+10th+generation',
+      'reliance':    'https://www.reliancedigital.in/search?q=Apple+iPad+10th+generation',
+      'vijay-sales': 'https://www.vijaysales.com/search/apple-ipad-10th-generation',
+      'jiomart':     'https://www.jiomart.com/catalogsearch/result/?q=Apple+iPad+10th+generation',
+      'lenovo-in':   'https://www.lenovo.com/in/en/search?q=tablet&type=products',
+      'mi-in':       'https://www.mi.com/in/search#q=tablet',
+      'amazon-ae':   'https://www.amazon.ae/s?k=Apple+iPad+10th+generation&i=electronics',
+      'noon':        'https://www.noon.com/uae-en/search/?q=Apple+iPad+10th+generation',
+      'sharaf':      'https://uae.sharafdg.com/search/?q=Apple+iPad+10th+generation',
+      'emax':        'https://www.emaxuae.com/catalogsearch/result/?q=Apple+iPad+10th+generation',
+      'jumbo':       'https://www.jumbo.ae/search?q=Apple+iPad+10th+generation',
+      'istyle':      'https://istyle.ae/search?type=product&q=iPad+10th+generation',
+    },
+    'ipad-11-2025': {
+      'amazon-in':   'https://www.amazon.in/s?k=Apple+iPad+11th+generation+2025+A16&i=electronics',
+      'flipkart':    'https://www.flipkart.com/search?q=Apple+iPad+A16+2025&otracker=search',
+      'croma':       'https://www.croma.com/searchB?q=Apple+iPad+A16+2025',
+      'reliance':    'https://www.reliancedigital.in/search?q=Apple+iPad+2025',
+      'vijay-sales': 'https://www.vijaysales.com/search/apple-ipad-2025',
+      'jiomart':     'https://www.jiomart.com/catalogsearch/result/?q=Apple+iPad+A16+2025',
+      'lenovo-in':   'https://www.lenovo.com/in/en/search?q=tablet&type=products',
+      'mi-in':       'https://www.mi.com/in/search#q=tablet',
+      'amazon-ae':   'https://www.amazon.ae/s?k=Apple+iPad+11th+generation+2025+A16&i=electronics',
+      'noon':        'https://www.noon.com/uae-en/search/?q=Apple+iPad+A16+2025',
+      'sharaf':      'https://uae.sharafdg.com/ipad-11/',
+      'emax':        'https://www.emaxuae.com/catalogsearch/result/?q=Apple+iPad+2025',
+      'jumbo':       'https://www.jumbo.ae/ipad-11-2025',
+      'istyle':      'https://istyle.ae/collections/apple-ipad-a16-2025',
+    },
+  };
+
   for (let i = 167; i >= 0; i--) {
     const ts = new Date(now - i * 3600 * 1000).toISOString();
     const snapshot = { timestamp: ts, products: {} };
@@ -444,22 +528,23 @@ function buildDemoData() {
     for (const p of PRODUCTS) {
       const base = bases[p.id];
       const jitter = () => 1 + (Math.random() - 0.5) * 0.04;
+      const urls = SEARCH_URLS[p.id] || {};
 
       const stores = {
-        'amazon-in':   { price: Math.round(base.IN * jitter()), region: 'IN', currency: 'INR', name: 'Amazon.in',        icon: '📦', url: 'https://amazon.in' },
-        'flipkart':    { price: Math.round(base.IN * jitter() * 0.97), region: 'IN', currency: 'INR', name: 'Flipkart', icon: '🛒', url: 'https://flipkart.com' },
-        'croma':       { price: Math.round(base.IN * jitter() * 1.02), region: 'IN', currency: 'INR', name: 'Croma',    icon: '⚡', url: 'https://croma.com' },
-        'reliance':    { price: Math.round(base.IN * jitter() * 1.01), region: 'IN', currency: 'INR', name: 'Reliance Digital', icon: '📱', url: 'https://reliancedigital.in' },
-        'vijay-sales': { price: Math.round(base.IN * jitter() * 0.99), region: 'IN', currency: 'INR', name: 'Vijay Sales',   icon: '🏬', url: 'https://vijaysales.com' },
-        'jiomart':     { price: Math.round(base.IN * jitter() * 0.96), region: 'IN', currency: 'INR', name: 'JioMart',        icon: '🛍️', url: 'https://jiomart.com' },
-        'lenovo-in':   { price: Math.round(base.IN * jitter() * 0.98), region: 'IN', currency: 'INR', name: 'Lenovo.com',     icon: '🖥️', url: 'https://lenovo.com/in' },
-        'mi-in':       { price: Math.round(base.IN * jitter() * 0.97), region: 'IN', currency: 'INR', name: 'Mi.com India',   icon: '🔴', url: 'https://mi.com/in' },
-        'amazon-ae':   { price: Math.round(base.AE * jitter()),        region: 'AE', currency: 'AED', name: 'Amazon.ae',      icon: '📦', url: 'https://amazon.ae' },
-        'noon':        { price: Math.round(base.AE * jitter() * 0.97), region: 'AE', currency: 'AED', name: 'Noon',           icon: '🌙', url: 'https://noon.com' },
-        'sharaf':      { price: Math.round(base.AE * jitter() * 1.02), region: 'AE', currency: 'AED', name: 'Sharaf DG',      icon: '🏪', url: 'https://uae.sharafdg.com' },
-        'emax':        { price: Math.round(base.AE * jitter() * 1.01), region: 'AE', currency: 'AED', name: 'Emax',           icon: '🔌', url: 'https://emaxuae.com' },
-        'jumbo':       { price: Math.round(base.AE * jitter() * 0.98), region: 'AE', currency: 'AED', name: 'Jumbo Electronics', icon: '🐘', url: 'https://jumbo.ae' },
-        'istyle':      { price: Math.round(base.AE * jitter() * 1.00), region: 'AE', currency: 'AED', name: 'iSTYLE UAE',     icon: '🍏', url: 'https://istyle.ae' },
+        'amazon-in':   { price: Math.round(base.IN * jitter()),        region: 'IN', currency: 'INR', name: 'Amazon.in',         icon: '📦', url: urls['amazon-in'] },
+        'flipkart':    { price: Math.round(base.IN * jitter() * 0.97), region: 'IN', currency: 'INR', name: 'Flipkart',           icon: '🛒', url: urls['flipkart'] },
+        'croma':       { price: Math.round(base.IN * jitter() * 1.02), region: 'IN', currency: 'INR', name: 'Croma',              icon: '⚡', url: urls['croma'] },
+        'reliance':    { price: Math.round(base.IN * jitter() * 1.01), region: 'IN', currency: 'INR', name: 'Reliance Digital',   icon: '📱', url: urls['reliance'] },
+        'vijay-sales': { price: Math.round(base.IN * jitter() * 0.99), region: 'IN', currency: 'INR', name: 'Vijay Sales',        icon: '🏬', url: urls['vijay-sales'] },
+        'jiomart':     { price: Math.round(base.IN * jitter() * 0.96), region: 'IN', currency: 'INR', name: 'JioMart',            icon: '🛍️', url: urls['jiomart'] },
+        'lenovo-in':   { price: Math.round(base.IN * jitter() * 0.98), region: 'IN', currency: 'INR', name: 'Lenovo.com',         icon: '🖥️', url: urls['lenovo-in'] },
+        'mi-in':       { price: Math.round(base.IN * jitter() * 0.97), region: 'IN', currency: 'INR', name: 'Mi.com India',       icon: '🔴', url: urls['mi-in'] },
+        'amazon-ae':   { price: Math.round(base.AE * jitter()),        region: 'AE', currency: 'AED', name: 'Amazon.ae',          icon: '📦', url: urls['amazon-ae'] },
+        'noon':        { price: Math.round(base.AE * jitter() * 0.97), region: 'AE', currency: 'AED', name: 'Noon',               icon: '🌙', url: urls['noon'] },
+        'sharaf':      { price: Math.round(base.AE * jitter() * 1.02), region: 'AE', currency: 'AED', name: 'Sharaf DG',          icon: '🏪', url: urls['sharaf'] },
+        'emax':        { price: Math.round(base.AE * jitter() * 1.01), region: 'AE', currency: 'AED', name: 'Emax',               icon: '🔌', url: urls['emax'] },
+        'jumbo':       { price: Math.round(base.AE * jitter() * 0.98), region: 'AE', currency: 'AED', name: 'Jumbo Electronics',  icon: '🐘', url: urls['jumbo'] },
+        'istyle':      { price: Math.round(base.AE * jitter() * 1.00), region: 'AE', currency: 'AED', name: 'iSTYLE UAE',         icon: '🍏', url: urls['istyle'] },
       };
 
       const inPrices = Object.entries(stores).filter(([,s]) => s.region === 'IN');
