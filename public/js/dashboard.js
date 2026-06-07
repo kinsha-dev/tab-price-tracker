@@ -416,7 +416,7 @@ function renderDealsTable(latest) {
         <tr>
           <th>Tablet</th>
           <th>Store</th>
-          <th>Price (${activeRegion === 'IN' ? 'INR' : 'AED'})</th>
+          <th>Price (${activeRegion === 'IN' ? 'INR' : 'AED / ≈INR'})</th>
         </tr>
       </thead>
       <tbody>${rows.join('')}</tbody>
