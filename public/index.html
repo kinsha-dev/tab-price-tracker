@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tab Price Tracker — IN & AE</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@3.0.1/dist/chartjs-plugin-annotation.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.10/dayjs.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-icon">📊</span>
+        <div>
+          <h1>Tab Price Tracker</h1>
+          <p class="subtitle">India &amp; UAE · Live every hour</p>
+        </div>
+      </div>
+      <div class="header-right">
+        <div class="live-badge"><span class="pulse"></span> Auto-refresh hourly</div>
+        <div id="last-updated" class="last-updated">—</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Summary cards -->
+  <section class="cards-section">
+    <div class="cards-grid" id="summary-cards"></div>
+  </section>
+
+  <!-- Region toggle + chart controls -->
+  <section class="controls-section">
+    <div class="controls-inner">
+      <div class="region-toggle">
+        <button class="region-btn active" data-region="IN">🇮🇳 India (INR)</button>
+        <button class="region-btn" data-region="AE">🇦🇪 UAE (AED)</button>
+      </div>
+      <div class="chart-controls">
+        <label>Range:</label>
+        <select id="range-select">
+          <option value="24">Last 24h</option>
+          <option value="48">Last 48h</option>
+          <option value="72">Last 3 days</option>
+          <option value="168" selected>Last 7 days</option>
+        </select>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline chart -->
+  <section class="chart-section">
+    <div class="chart-card">
+      <h2 class="chart-title">Price History Timeline</h2>
+      <div class="chart-wrap">
+        <canvas id="timeline-chart"></canvas>
+      </div>
+      <div class="chart-legend" id="timeline-legend"></div>
+    </div>
+  </section>
+
+  <!-- Current prices bar chart -->
+  <section class="chart-section">
+    <div class="chart-card">
+      <h2 class="chart-title">Current Prices by Store</h2>
+      <div class="product-tabs" id="product-tabs"></div>
+      <div class="chart-wrap">
+        <canvas id="bar-chart"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <!-- Store price table -->
+  <section class="table-section">
+    <div class="table-card">
+      <h2 class="chart-title">Best Deals Right Now</h2>
+      <div id="deals-table"></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Prices refreshed hourly via automated scraping. Prices may vary. Click store icons to visit offers.</p>
+  </footer>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

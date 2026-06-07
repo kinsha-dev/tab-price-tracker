@@ -1,0 +1,48 @@
+name: Hourly Price Scraper
+
+on:
+  schedule:
+    - cron: '0 * * * *'   # every hour on the dot
+  workflow_dispatch:       # manual trigger from GitHub UI
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright browsers
+        run: npx playwright install chromium --with-deps
+
+      - name: Run scraper
+        run: node scraper/index.js
+        env:
+          NODE_ENV: production
+
+      - name: Commit updated price data
+        run: |
+          git config user.name  "Price Bot"
+          git config user.email "bot@tab-shopping"
+          git add public/data/prices.json
+          git diff --cached --quiet || git commit -m "chore: price update $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Trigger Netlify deploy
+        if: env.NETLIFY_HOOK_URL != ''
+        run: curl -s -X POST "$NETLIFY_HOOK_URL"
+        env:
+          NETLIFY_HOOK_URL: ${{ secrets.NETLIFY_HOOK_URL }}
