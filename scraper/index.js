@@ -9,6 +9,9 @@ const IN_STORES = [
   require('./stores/croma'),
   require('./stores/reliance'),
   require('./stores/vijay-sales'),
+  require('./stores/jiomart'),
+  require('./stores/lenovo-in'),
+  require('./stores/mi-in'),
 ];
 
 const AE_STORES = [
@@ -16,6 +19,8 @@ const AE_STORES = [
   require('./stores/noon'),
   require('./stores/sharaf'),
   require('./stores/emax'),
+  require('./stores/jumbo'),
+  require('./stores/istyle'),
 ];
 
 const DATA_PATH = path.join(__dirname, '..', 'public', 'data', 'prices.json');

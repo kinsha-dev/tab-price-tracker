@@ -17,10 +17,15 @@ const STORE_META = {
   'croma':      { name: 'Croma',           icon: '⚡', region: 'IN', flag: '🇮🇳' },
   'reliance':   { name: 'Reliance Digital',icon: '📱', region: 'IN', flag: '🇮🇳' },
   'vijay-sales':{ name: 'Vijay Sales',     icon: '🏬', region: 'IN', flag: '🇮🇳' },
+  'jiomart':    { name: 'JioMart',         icon: '🛍️', region: 'IN', flag: '🇮🇳' },
+  'lenovo-in':  { name: 'Lenovo.com',      icon: '🖥️', region: 'IN', flag: '🇮🇳' },
+  'mi-in':      { name: 'Mi.com India',    icon: '🔴', region: 'IN', flag: '🇮🇳' },
   'amazon-ae':  { name: 'Amazon.ae',       icon: '📦', region: 'AE', flag: '🇦🇪' },
   'noon':       { name: 'Noon',            icon: '🌙', region: 'AE', flag: '🇦🇪' },
   'sharaf':     { name: 'Sharaf DG',       icon: '🏪', region: 'AE', flag: '🇦🇪' },
   'emax':       { name: 'Emax',            icon: '🔌', region: 'AE', flag: '🇦🇪' },
+  'jumbo':      { name: 'Jumbo Electronics',icon: '🐘', region: 'AE', flag: '🇦🇪' },
+  'istyle':     { name: 'iSTYLE UAE',      icon: '🍏', region: 'AE', flag: '🇦🇪' },
 };
 
 /* ─── State ──────────────────────────────────────── */
@@ -443,11 +448,16 @@ function buildDemoData() {
         'flipkart':    { price: Math.round(base.IN * jitter() * 0.97), region: 'IN', currency: 'INR', name: 'Flipkart', icon: '🛒', url: 'https://flipkart.com' },
         'croma':       { price: Math.round(base.IN * jitter() * 1.02), region: 'IN', currency: 'INR', name: 'Croma',    icon: '⚡', url: 'https://croma.com' },
         'reliance':    { price: Math.round(base.IN * jitter() * 1.01), region: 'IN', currency: 'INR', name: 'Reliance Digital', icon: '📱', url: 'https://reliancedigital.in' },
-        'vijay-sales': { price: Math.round(base.IN * jitter() * 0.99), region: 'IN', currency: 'INR', name: 'Vijay Sales', icon: '🏬', url: 'https://vijaysales.com' },
-        'amazon-ae':   { price: Math.round(base.AE * jitter()), region: 'AE', currency: 'AED', name: 'Amazon.ae', icon: '📦', url: 'https://amazon.ae' },
-        'noon':        { price: Math.round(base.AE * jitter() * 0.97), region: 'AE', currency: 'AED', name: 'Noon',   icon: '🌙', url: 'https://noon.com' },
-        'sharaf':      { price: Math.round(base.AE * jitter() * 1.02), region: 'AE', currency: 'AED', name: 'Sharaf DG', icon: '🏪', url: 'https://uae.sharafdg.com' },
-        'emax':        { price: Math.round(base.AE * jitter() * 1.01), region: 'AE', currency: 'AED', name: 'Emax', icon: '🔌', url: 'https://emaxuae.com' },
+        'vijay-sales': { price: Math.round(base.IN * jitter() * 0.99), region: 'IN', currency: 'INR', name: 'Vijay Sales',   icon: '🏬', url: 'https://vijaysales.com' },
+        'jiomart':     { price: Math.round(base.IN * jitter() * 0.96), region: 'IN', currency: 'INR', name: 'JioMart',        icon: '🛍️', url: 'https://jiomart.com' },
+        'lenovo-in':   { price: Math.round(base.IN * jitter() * 0.98), region: 'IN', currency: 'INR', name: 'Lenovo.com',     icon: '🖥️', url: 'https://lenovo.com/in' },
+        'mi-in':       { price: Math.round(base.IN * jitter() * 0.97), region: 'IN', currency: 'INR', name: 'Mi.com India',   icon: '🔴', url: 'https://mi.com/in' },
+        'amazon-ae':   { price: Math.round(base.AE * jitter()),        region: 'AE', currency: 'AED', name: 'Amazon.ae',      icon: '📦', url: 'https://amazon.ae' },
+        'noon':        { price: Math.round(base.AE * jitter() * 0.97), region: 'AE', currency: 'AED', name: 'Noon',           icon: '🌙', url: 'https://noon.com' },
+        'sharaf':      { price: Math.round(base.AE * jitter() * 1.02), region: 'AE', currency: 'AED', name: 'Sharaf DG',      icon: '🏪', url: 'https://uae.sharafdg.com' },
+        'emax':        { price: Math.round(base.AE * jitter() * 1.01), region: 'AE', currency: 'AED', name: 'Emax',           icon: '🔌', url: 'https://emaxuae.com' },
+        'jumbo':       { price: Math.round(base.AE * jitter() * 0.98), region: 'AE', currency: 'AED', name: 'Jumbo Electronics', icon: '🐘', url: 'https://jumbo.ae' },
+        'istyle':      { price: Math.round(base.AE * jitter() * 1.00), region: 'AE', currency: 'AED', name: 'iSTYLE UAE',     icon: '🍏', url: 'https://istyle.ae' },
       };
 
       const inPrices = Object.entries(stores).filter(([,s]) => s.region === 'IN');
