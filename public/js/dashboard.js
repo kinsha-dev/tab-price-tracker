@@ -1,3 +1,8 @@
+/* ─── Currency ───────────────────────────────────── */
+const AED_TO_INR = 23.05; // 1 AED ≈ ₹23.05 (update periodically)
+function aedToInr(aed) { return Math.round(aed * AED_TO_INR); }
+function inrTag(aed) { return `<span class="inr-equiv">(≈ ₹${aedToInr(aed).toLocaleString('en-IN')})</span>`; }
+
 /* ─── Config ─────────────────────────────────────── */
 const PRODUCTS = [
   { id: 'lenovo-idea-tab',   name: 'Lenovo IdeaTab',   color: '#4F81BD', emoji: '💻' },
@@ -112,7 +117,7 @@ function renderSummaryCards(latest) {
       const c = pd.cheapestAE;
       aeHtml = `
         <div class="card-region">🇦🇪 Best in UAE</div>
-        <div class="card-price">AED ${c.price.toLocaleString()}</div>
+        <div class="card-price">AED ${c.price.toLocaleString()} ${inrTag(c.price)}</div>
         <div class="card-store">
           ${c.icon} <a href="${c.url || '#'}" target="_blank" rel="noopener">${c.storeName} ↗</a>
         </div>`;
@@ -212,8 +217,10 @@ function renderTimelineChart() {
             label: ctx => {
               const v = ctx.parsed.y;
               if (v == null) return `${ctx.dataset.label}: N/A`;
-              const sym = activeRegion === 'IN' ? '₹' : 'AED ';
-              return `${ctx.dataset.label}: ${sym}${v.toLocaleString()}`;
+              if (activeRegion === 'AE') {
+                return `${ctx.dataset.label}: AED ${v.toLocaleString()} (≈ ₹${aedToInr(v).toLocaleString('en-IN')})`;
+              }
+              return `${ctx.dataset.label}: ₹${v.toLocaleString('en-IN')}`;
             }
           }
         }
@@ -315,9 +322,12 @@ function renderBarChart() {
           padding: 12,
           callbacks: {
             label: ctx => {
-              const sym = activeRegion === 'IN' ? '₹' : 'AED ';
-              const cheapTag = ctx.parsed.y === minPrice ? ' 🏆 CHEAPEST' : '';
-              return `${sym}${ctx.parsed.y.toLocaleString()}${cheapTag}`;
+              const v = ctx.parsed.y;
+              const cheapTag = v === minPrice ? ' 🏆 CHEAPEST' : '';
+              if (activeRegion === 'AE') {
+                return `AED ${v.toLocaleString()} (≈ ₹${aedToInr(v).toLocaleString('en-IN')})${cheapTag}`;
+              }
+              return `₹${v.toLocaleString('en-IN')}${cheapTag}`;
             }
           }
         }
@@ -382,6 +392,7 @@ function renderDealsTable(latest) {
           </td>
           <td class="price-cell" style="color:${isCheapest ? '#22c55e' : '#e8eaf0'}">
             ${sym}${store.price.toLocaleString()}
+            ${activeRegion === 'AE' ? `<br><span class="inr-equiv">(≈ ₹${aedToInr(store.price).toLocaleString('en-IN')})</span>` : ''}
           </td>
         </tr>
       `);

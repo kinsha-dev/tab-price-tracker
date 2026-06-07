@@ -112,6 +112,12 @@ header {
   line-height: 1;
   margin: 4px 0 6px;
 }
+.inr-equiv {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--text2);
+  margin-left: 4px;
+}
 .card-store {
   display: flex;
   align-items: center;
