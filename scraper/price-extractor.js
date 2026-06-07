@@ -65,7 +65,9 @@ async function extractPrice(page, url, region) {
 
   const meta = getStoreMeta(domain);
   const currency = region === 'AE' ? 'AED' : 'INR';
-  const minPrice = region === 'AE' ? 200 : 5000;
+  // Realistic price bounds per region — filters EMI instalments and outliers
+  const minPrice = region === 'AE' ? 400 : 10000;
+  const maxPrice = region === 'AE' ? 8000 : 200000;
 
   try {
     await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 25000 });
@@ -80,7 +82,7 @@ async function extractPrice(page, url, region) {
     const siteKey = getSiteKey(domain);
     const selectors = siteKey ? SITE_SELECTORS[siteKey] : null;
 
-    const result = await page.evaluate(({ selectors, minPrice }) => {
+    const result = await page.evaluate(({ selectors, minPrice, maxPrice }) => {
       function tryPrice(selector) {
         if (!selector) return null;
         for (const sel of selector.split(',').map(s => s.trim())) {
@@ -88,7 +90,7 @@ async function extractPrice(page, url, region) {
           for (const el of els) {
             const txt = el.getAttribute('aria-label') || el.textContent;
             const p = parseFloat(txt.replace(/[^\d.]/g, ''));
-            if (!isNaN(p) && p >= minPrice && p < 10000000) return p;
+            if (!isNaN(p) && p >= minPrice && p <= maxPrice) return p;
           }
         }
         return null;
@@ -117,7 +119,7 @@ async function extractPrice(page, url, region) {
         const txt = el.textContent.trim();
         if (!txt.match(/[₹][\d,]+|AED\s?[\d,]+/)) continue;
         const p = parseFloat(txt.replace(/[^\d.]/g, ''));
-        if (!isNaN(p) && p >= minPrice && p < 10000000) {
+        if (!isNaN(p) && p >= minPrice && p <= maxPrice) {
           return { price: p, title: document.title.slice(0, 100) };
         }
       }
@@ -138,7 +140,7 @@ async function extractPrice(page, url, region) {
       }
 
       return null;
-    }, { selectors, minPrice });
+    }, { selectors, minPrice, maxPrice });
 
     if (!result) return null;
 
