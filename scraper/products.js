@@ -27,6 +27,15 @@ const PRODUCTS = [
     }
   },
   {
+    id: 'ipad-10',
+    name: 'iPad 10 (2022)',
+    color: '#70AD47',
+    queries: {
+      in: 'Apple iPad 10th generation 64GB',
+      ae: 'Apple iPad 10th generation 64GB'
+    }
+  },
+  {
     id: 'ipad-11-2025',
     name: 'iPad 11 (2025)',
     color: '#9B59B6',
