@@ -42,6 +42,15 @@ document.addEventListener('DOMContentLoaded', () => {
   initControls();
   loadData();
   setInterval(loadData, 60 * 60 * 1000); // refresh every hour
+
+  const btn = document.getElementById('refresh-btn');
+  btn.addEventListener('click', async () => {
+    btn.classList.add('spinning');
+    btn.disabled = true;
+    await loadData();
+    btn.classList.remove('spinning');
+    btn.disabled = false;
+  });
 });
 
 async function loadData() {

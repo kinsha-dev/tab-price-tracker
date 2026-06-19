@@ -1,6 +1,7 @@
 const { chromium } = require('playwright');
 const fs = require('fs');
 const path = require('path');
+const axios = require('axios');
 const PRODUCTS = require('./products');
 const { searchGoogle } = require('./google-search');
 const { extractPrice } = require('./price-extractor');
@@ -114,6 +115,11 @@ async function run() {
 
   // Persist
   const existing = loadExisting();
+  const prevSnapshot = existing.history[existing.history.length - 1];
+
+  // Detect price drops and send ntfy notifications
+  await notifyPriceDrops(snapshot, prevSnapshot);
+
   existing.history.push(snapshot);
   if (existing.history.length > MAX_HISTORY_ENTRIES) {
     existing.history = existing.history.slice(-MAX_HISTORY_ENTRIES);
@@ -124,6 +130,63 @@ async function run() {
   fs.writeFileSync(DATA_PATH, JSON.stringify(existing, null, 2));
 
   console.log(`\n✅ Done — ${existing.history.length} history entries saved`);
+}
+
+async function notifyPriceDrops(snapshot, prevSnapshot) {
+  const topic = process.env.NTFY_TOPIC;
+  if (!topic) return; // NTFY_TOPIC not set — skip silently
+
+  const AED_TO_INR = 23.05;
+  const drops = [];
+
+  for (const product of PRODUCTS) {
+    const cur = snapshot.products[product.id];
+    const prev = prevSnapshot?.products?.[product.id];
+    if (!cur || !prev) continue;
+
+    for (const region of ['IN', 'AE']) {
+      const key = region === 'IN' ? 'cheapestIN' : 'cheapestAE';
+      const curC = cur[key];
+      const prevC = prev[key];
+      if (!curC || !prevC) continue;
+
+      if (curC.price < prevC.price) {
+        const sym = region === 'IN' ? '₹' : 'AED ';
+        const drop = prevC.price - curC.price;
+        const pct = ((drop / prevC.price) * 100).toFixed(1);
+        let msg = `${product.name} (${region}): ${sym}${curC.price.toLocaleString()} at ${curC.storeName} — down ${sym}${Math.round(drop).toLocaleString()} (${pct}%)`;
+        if (region === 'AE') {
+          msg += ` ≈ ₹${Math.round(curC.price * AED_TO_INR).toLocaleString('en-IN')}`;
+        }
+        drops.push({ msg, url: curC.url, pct: parseFloat(pct) });
+      }
+    }
+  }
+
+  if (!drops.length) {
+    console.log('  📲 ntfy: no price drops this run');
+    return;
+  }
+
+  // Sort biggest drop first
+  drops.sort((a, b) => b.pct - a.pct);
+
+  for (const d of drops) {
+    try {
+      await axios.post(`https://ntfy.sh/${topic}`, d.msg, {
+        headers: {
+          Title: '🏷️ Tab Price Drop!',
+          Priority: d.pct >= 5 ? 'high' : 'default',
+          Tags: 'chart_with_downwards_trend,iphone',
+          Click: d.url || '',
+        },
+        timeout: 10000,
+      });
+      console.log(`  📲 ntfy sent: ${d.msg}`);
+    } catch (err) {
+      console.log(`  ⚠️  ntfy failed: ${err.message.slice(0, 60)}`);
+    }
+  }
 }
 
 run().catch(err => {

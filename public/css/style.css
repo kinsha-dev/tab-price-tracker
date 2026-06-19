@@ -68,6 +68,14 @@ header {
   50% { opacity: 0.5; transform: scale(0.8); }
 }
 .last-updated { font-size: 12px; color: var(--text2); }
+.refresh-btn {
+  background: none; border: 1px solid var(--border); border-radius: 6px;
+  color: var(--text2); cursor: pointer; font-size: 16px; line-height: 1;
+  padding: 4px 8px; transition: color .2s, border-color .2s;
+}
+.refresh-btn:hover { color: var(--accent); border-color: var(--accent); }
+.refresh-btn.spinning { animation: spin .6s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
 
 /* ── Sections ── */
 .cards-section, .controls-section, .chart-section, .table-section {

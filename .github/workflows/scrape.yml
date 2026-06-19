@@ -31,6 +31,7 @@ jobs:
         env:
           NODE_ENV: production
           BRAVE_API_KEY: ${{ secrets.BRAVE_API_KEY }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
 
       - name: Commit updated price data
         run: |
