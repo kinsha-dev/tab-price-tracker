@@ -43,6 +43,7 @@ async function run() {
 
   const browser = await chromium.launch({
     headless: true,
+    executablePath: '/opt/pw-browsers/chromium-1194/chrome-linux/chrome',
     args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-blink-features=AutomationControlled'],
   });
 
