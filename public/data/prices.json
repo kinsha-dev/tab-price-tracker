@@ -1,811 +1,6 @@
 {
-  "lastUpdated": "2026-06-27T09:25:07.021Z",
+  "lastUpdated": "2026-06-27T11:23:01.990Z",
   "history": [
-    {
-      "timestamp": "2026-06-07T05:46:00.346Z",
-      "products": {
-        "lenovo-idea-tab": {
-          "id": "lenovo-idea-tab",
-          "name": "Lenovo IdeaTab",
-          "stores": {
-            "amazon-in": {
-              "id": "amazon-in",
-              "name": "Amazon.in",
-              "icon": "📦",
-              "region": "IN",
-              "currency": "INR",
-              "mult": 1,
-              "price": 22190,
-              "url": "https://www.amazon.in/s?k=Lenovo+IdeaTab&i=electronics"
-            },
-            "flipkart": {
-              "id": "flipkart",
-              "name": "Flipkart",
-              "icon": "🛒",
-              "region": "IN",
-              "currency": "INR",
-              "mult": 0.97,
-              "price": 21362,
-              "url": "https://www.flipkart.com/search?q=Lenovo+IdeaTab&otracker=search"
-            },
-            "croma": {
-              "id": "croma",
-              "name": "Croma",
-              "icon": "⚡",
-              "region": "IN",
-              "currency": "INR",
-              "mult": 1.02,
-              "price": 22967,
-              "url": "https://www.croma.com/searchB?q=Lenovo+IdeaTab"
-            },
-            "reliance": {
-              "id": "reliance",
-              "name": "Reliance Digital",
-              "icon": "📱",
-              "region": "IN",
-              "currency": "INR",
-              "mult": 1.01,
-              "price": 22272,
-              "url": "https://www.reliancedigital.in/search?q=Lenovo+IdeaTab"
-            },
-            "vijay-sales": {
-              "id": "vijay-sales",
-              "name": "Vijay Sales",
-              "icon": "🏬",
-              "region": "IN",
-              "currency": "INR",
-              "mult": 0.99,
-              "price": 21243,
-              "url": "https://www.vijaysales.com/search/lenovo-ideatab"
-            },
-            "jiomart": {
-              "id": "jiomart",
-              "name": "JioMart",
-              "icon": "🛍️",
-              "region": "IN",
-              "currency": "INR",
-              "mult": 0.96,
-              "price": 21427,
-              "url": "https://www.jiomart.com/catalogsearch/result/?q=Lenovo+IdeaTab"
-            },
-            "lenovo-in": {
-              "id": "lenovo-in",
-              "name": "Lenovo.com",
-              "icon": "🖥️",
-              "region": "IN",
-              "currency": "INR",
-              "mult": 0.98,
-              "price": 21862,
-              "url": "https://www.lenovo.com/in/en/search?q=IdeaTab&type=products"
-            },
-            "mi-in": {
-              "id": "mi-in",
-              "name": "Mi.com India",
-              "icon": "🔴",
-              "region": "IN",
-              "currency": "INR",
-              "mult": 0.97,
-              "price": 21136,
-              "url": "https://www.mi.com/in/search#q=tablet"
-            },
-            "amazon-ae": {
-              "id": "amazon-ae",
-              "name": "Amazon.ae",
-              "icon": "📦",
-              "region": "AE",
-              "currency": "AED",
-              "mult": 1,
-              "price": 914,
-              "url": "https://www.amazon.ae/s?k=Lenovo+IdeaTab&i=electronics"
-            },
-            "noon": {
-              "id": "noon",
-              "name": "Noon",
-              "icon": "🌙",
-              "region": "AE",
-              "currency": "AED",
-              "mult": 0.97,
-              "price": 857,
-              "url": "https://www.noon.com/uae-en/search/?q=Lenovo+IdeaTab"
-            },
-            "sharaf": {
-              "id": "sharaf",
-              "name": "Sharaf DG",
-              "icon": "🏪",
-              "region": "AE",
-              "currency": "AED",
-              "mult": 1.02,
-              "price": 932,
-              "url": "https://uae.sharafdg.com/search/?q=Lenovo+IdeaTab"
-            },
-            "emax": {
-              "id": "emax",
-              "name": "Emax",
-              "icon": "🔌",
-              "region": "AE",
-              "currency": "AED",
-              "mult": 1.01,
-              "price": 909,
-              "url": "https://www.emaxuae.com/catalogsearch/result/?q=Lenovo+IdeaTab"
-            },
-            "jumbo": {
-              "id": "jumbo",
-              "name": "Jumbo Electronics",
-              "icon": "🐘",
-              "region": "AE",
-              "currency": "AED",
-              "mult": 0.98,
-              "price": 866,
-              "url": "https://www.jumbo.ae/search?q=Lenovo+IdeaTab"
-            },
-            "istyle": {
-              "id": "istyle",
-              "name": "iSTYLE UAE",
-              "icon": "🍏",
-              "region": "AE",
-              "currency": "AED",
-              "mult": 1,
-              "price": 887,
-              "url": "https://istyle.ae/search?type=product&q=Lenovo+IdeaTab"
-            }
-          },
-          "cheapestIN": {
-            "storeId": "mi-in",
-            "storeName": "Mi.com India",
-            "price": 21136,
-            "url": "https://www.mi.com/in/search#q=tablet",
-            "icon": "🔴"
-          },
-          "cheapestAE": {
-            "storeId": "noon",
-            "storeName": "Noon",
-            "price": 857,
-            "url": "https://www.noon.com/uae-en/search/?q=Lenovo+IdeaTab",
-            "icon": "🌙"
-          }
-        },
-        "lenovo-legion-tab": {
-          "id": "lenovo-legion-tab",
-          "name": "Lenovo Legion Tab",
-          "stores": {
-            "amazon-in": {
-              "id": "amazon-in",
-              "name": "Amazon.in",
-              "icon": "📦",
-              "region": "IN",
-              "currency": "INR",
-              "mult": 1,
-              "price": 54570,
-              "url": "https://www.amazon.in/s?k=Lenovo+Legion+Tab&i=electronics"
-            },
-            "flipkart": {
-              "id": "flipkart",
-              "name": "Flipkart",
-              "icon": "🛒",
-              "region": "IN",
-              "currency": "INR",
-              "mult": 0.97,
-              "price": 52145,
-              "url": "https://www.flipkart.com/search?q=Lenovo+Legion+Tab&otracker=search"
-            },
-            "croma": {
-              "id": "croma",
-              "name": "Croma",
-              "icon": "⚡",
-              "region": "IN",
-              "currency": "INR",
-              "mult": 1.02,
-              "price": 56803,
-              "url": "https://www.croma.com/searchB?q=Lenovo+Legion+Tab"
-            },
-            "reliance": {
-              "id": "reliance",
-              "name": "Reliance Digital",
-              "icon": "📱",
-              "region": "IN",
-              "currency": "INR",
-              "mult": 1.01,
-              "price": 55578,
-              "url": "https://www.reliancedigital.in/search?q=Lenovo+Legion+Tab"
-            },
-            "vijay-sales": {
-              "id": "vijay-sales",
-              "name": "Vijay Sales",
-              "icon": "🏬",
-              "region": "IN",
-              "currency": "INR",
-              "mult": 0.99,
-              "price": 53362,
-              "url": "https://www.vijaysales.com/search/lenovo-legion-tab"
-            },
-            "jiomart": {
-              "id": "jiomart",
-              "name": "JioMart",
-              "icon": "🛍️",
-              "region": "IN",
-              "currency": "INR",
-              "mult": 0.96,
-              "price": 51545,
-              "url": "https://www.jiomart.com/catalogsearch/result/?q=Lenovo+Legion+Tab"
-            },
-            "lenovo-in": {
-              "id": "lenovo-in",
-              "name": "Lenovo.com",
-              "icon": "🖥️",
-              "region": "IN",
-              "currency": "INR",
-              "mult": 0.98,
-              "price": 54589,
-              "url": "https://www.lenovo.com/in/en/search?q=Legion+Tab&type=products"
-            },
-            "mi-in": {
-              "id": "mi-in",
-              "name": "Mi.com India",
-              "icon": "🔴",
-              "region": "IN",
-              "currency": "INR",
-              "mult": 0.97,
-              "price": 53898,
-              "url": "https://www.mi.com/in/search#q=tablet"
-            },
-            "amazon-ae": {
-              "id": "amazon-ae",
-              "name": "Amazon.ae",
-              "icon": "📦",
-              "region": "AE",
-              "currency": "AED",
-              "mult": 1,
-              "price": 2227,
-              "url": "https://www.amazon.ae/s?k=Lenovo+Legion+Tab&i=electronics"
-            },
-            "noon": {
-              "id": "noon",
-              "name": "Noon",
-              "icon": "🌙",
-              "region": "AE",
-              "currency": "AED",
-              "mult": 0.97,
-              "price": 2172,
-              "url": "https://www.noon.com/uae-en/search/?q=Lenovo+Legion+Tab"
-            },
-            "sharaf": {
-              "id": "sharaf",
-              "name": "Sharaf DG",
-              "icon": "🏪",
-              "region": "AE",
-              "currency": "AED",
-              "mult": 1.02,
-              "price": 2287,
-              "url": "https://uae.sharafdg.com/search/?q=Lenovo+Legion+Tab"
-            },
-            "emax": {
-              "id": "emax",
-              "name": "Emax",
-              "icon": "🔌",
-              "region": "AE",
-              "currency": "AED",
-              "mult": 1.01,
-              "price": 2243,
-              "url": "https://www.emaxuae.com/catalogsearch/result/?q=Lenovo+Legion+Tab"
-            },
-            "jumbo": {
-              "id": "jumbo",
-              "name": "Jumbo Electronics",
-              "icon": "🐘",
-              "region": "AE",
-              "currency": "AED",
-              "mult": 0.98,
-              "price": 2181,
-              "url": "https://www.jumbo.ae/search?q=Lenovo+Legion+Tab"
-            },
-            "istyle": {
-              "id": "istyle",
-              "name": "iSTYLE UAE",
-              "icon": "🍏",
-              "region": "AE",
-              "currency": "AED",
-              "mult": 1,
-              "price": 2236,
-              "url": "https://istyle.ae/search?type=product&q=Lenovo+Legion+Tab"
-            }
-          },
-          "cheapestIN": {
-            "storeId": "jiomart",
-            "storeName": "JioMart",
-            "price": 51545,
-            "url": "https://www.jiomart.com/catalogsearch/result/?q=Lenovo+Legion+Tab",
-            "icon": "🛍️"
-          },
-          "cheapestAE": {
-            "storeId": "noon",
-            "storeName": "Noon",
-            "price": 2172,
-            "url": "https://www.noon.com/uae-en/search/?q=Lenovo+Legion+Tab",
-            "icon": "🌙"
-          }
-        },
-        "xiaomi-pad-7": {
-          "id": "xiaomi-pad-7",
-          "name": "Xiaomi Pad 7",
-          "stores": {
-            "amazon-in": {
-              "id": "amazon-in",
-              "name": "Amazon.in",
-              "icon": "📦",
-              "region": "IN",
-              "currency": "INR",
-              "mult": 1,
-              "price": 26005,
-              "url": "https://www.amazon.in/s?k=Xiaomi+Pad+7&i=electronics"
-            },
-            "flipkart": {
-              "id": "flipkart",
-              "name": "Flipkart",
-              "icon": "🛒",
-              "region": "IN",
-              "currency": "INR",
-              "mult": 0.97,
-              "price": 25348,
-              "url": "https://www.flipkart.com/search?q=Xiaomi+Pad+7&otracker=search"
-            },
-            "croma": {
-              "id": "croma",
-              "name": "Croma",
-              "icon": "⚡",
-              "region": "IN",
-              "currency": "INR",
-              "mult": 1.02,
-              "price": 26173,
-              "url": "https://www.croma.com/searchB?q=Xiaomi+Pad+7"
-            },
-            "reliance": {
-              "id": "reliance",
-              "name": "Reliance Digital",
-              "icon": "📱",
-              "region": "IN",
-              "currency": "INR",
-              "mult": 1.01,
-              "price": 26833,
-              "url": "https://www.reliancedigital.in/search?q=Xiaomi+Pad+7"
-            },
-            "vijay-sales": {
-              "id": "vijay-sales",
-              "name": "Vijay Sales",
-              "icon": "🏬",
-              "region": "IN",
-              "currency": "INR",
-              "mult": 0.99,
-              "price": 26288,
-              "url": "https://www.vijaysales.com/search/xiaomi-pad-7"
-            },
-            "jiomart": {
-              "id": "jiomart",
-              "name": "JioMart",
-              "icon": "🛍️",
-              "region": "IN",
-              "currency": "INR",
-              "mult": 0.96,
-              "price": 24930,
-              "url": "https://www.jiomart.com/catalogsearch/result/?q=Xiaomi+Pad+7"
-            },
-            "lenovo-in": {
-              "id": "lenovo-in",
-              "name": "Lenovo.com",
-              "icon": "🖥️",
-              "region": "IN",
-              "currency": "INR",
-              "mult": 0.98,
-              "price": 25792,
-              "url": "https://www.lenovo.com/in/en/search?q=tablet&type=products"
-            },
-            "mi-in": {
-              "id": "mi-in",
-              "name": "Mi.com India",
-              "icon": "🔴",
-              "region": "IN",
-              "currency": "INR",
-              "mult": 0.97,
-              "price": 24980,
-              "url": "https://www.mi.com/in/product/xiaomi-pad-7/"
-            },
-            "amazon-ae": {
-              "id": "amazon-ae",
-              "name": "Amazon.ae",
-              "icon": "📦",
-              "region": "AE",
-              "currency": "AED",
-              "mult": 1,
-              "price": 1074,
-              "url": "https://www.amazon.ae/s?k=Xiaomi+Pad+7&i=electronics"
-            },
-            "noon": {
-              "id": "noon",
-              "name": "Noon",
-              "icon": "🌙",
-              "region": "AE",
-              "currency": "AED",
-              "mult": 0.97,
-              "price": 1047,
-              "url": "https://www.noon.com/uae-en/search/?q=Xiaomi+Pad+7"
-            },
-            "sharaf": {
-              "id": "sharaf",
-              "name": "Sharaf DG",
-              "icon": "🏪",
-              "region": "AE",
-              "currency": "AED",
-              "mult": 1.02,
-              "price": 1108,
-              "url": "https://uae.sharafdg.com/search/?q=Xiaomi+Pad+7"
-            },
-            "emax": {
-              "id": "emax",
-              "name": "Emax",
-              "icon": "🔌",
-              "region": "AE",
-              "currency": "AED",
-              "mult": 1.01,
-              "price": 1109,
-              "url": "https://www.emaxuae.com/catalogsearch/result/?q=Xiaomi+Pad+7"
-            },
-            "jumbo": {
-              "id": "jumbo",
-              "name": "Jumbo Electronics",
-              "icon": "🐘",
-              "region": "AE",
-              "currency": "AED",
-              "mult": 0.98,
-              "price": 1098,
-              "url": "https://www.jumbo.ae/search?q=Xiaomi+Pad+7"
-            },
-            "istyle": {
-              "id": "istyle",
-              "name": "iSTYLE UAE",
-              "icon": "🍏",
-              "region": "AE",
-              "currency": "AED",
-              "mult": 1,
-              "price": 1112,
-              "url": "https://istyle.ae/search?type=product&q=Xiaomi+Pad+7"
-            }
-          },
-          "cheapestIN": {
-            "storeId": "jiomart",
-            "storeName": "JioMart",
-            "price": 24930,
-            "url": "https://www.jiomart.com/catalogsearch/result/?q=Xiaomi+Pad+7",
-            "icon": "🛍️"
-          },
-          "cheapestAE": {
-            "storeId": "noon",
-            "storeName": "Noon",
-            "price": 1047,
-            "url": "https://www.noon.com/uae-en/search/?q=Xiaomi+Pad+7",
-            "icon": "🌙"
-          }
-        },
-        "ipad-10": {
-          "id": "ipad-10",
-          "name": "iPad 10 (2022)",
-          "stores": {
-            "amazon-in": {
-              "id": "amazon-in",
-              "name": "Amazon.in",
-              "icon": "📦",
-              "region": "IN",
-              "currency": "INR",
-              "mult": 1,
-              "price": 27819,
-              "url": "https://www.amazon.in/s?k=Apple+iPad+10th+generation&i=electronics"
-            },
-            "flipkart": {
-              "id": "flipkart",
-              "name": "Flipkart",
-              "icon": "🛒",
-              "region": "IN",
-              "currency": "INR",
-              "mult": 0.97,
-              "price": 26782,
-              "url": "https://www.flipkart.com/search?q=Apple+iPad+10th+generation&otracker=search"
-            },
-            "croma": {
-              "id": "croma",
-              "name": "Croma",
-              "icon": "⚡",
-              "region": "IN",
-              "currency": "INR",
-              "mult": 1.02,
-              "price": 27845,
-              "url": "https://www.croma.com/searchB?q=Apple+iPad+10th+generation"
-            },
-            "reliance": {
-              "id": "reliance",
-              "name": "Reliance Digital",
-              "icon": "📱",
-              "region": "IN",
-              "currency": "INR",
-              "mult": 1.01,
-              "price": 28243,
-              "url": "https://www.reliancedigital.in/search?q=Apple+iPad+10th+generation"
-            },
-            "vijay-sales": {
-              "id": "vijay-sales",
-              "name": "Vijay Sales",
-              "icon": "🏬",
-              "region": "IN",
-              "currency": "INR",
-              "mult": 0.99,
-              "price": 27754,
-              "url": "https://www.vijaysales.com/search/apple-ipad-10th-generation"
-            },
-            "jiomart": {
-              "id": "jiomart",
-              "name": "JioMart",
-              "icon": "🛍️",
-              "region": "IN",
-              "currency": "INR",
-              "mult": 0.96,
-              "price": 26038,
-              "url": "https://www.jiomart.com/catalogsearch/result/?q=Apple+iPad+10th+generation"
-            },
-            "lenovo-in": {
-              "id": "lenovo-in",
-              "name": "Lenovo.com",
-              "icon": "🖥️",
-              "region": "IN",
-              "currency": "INR",
-              "mult": 0.98,
-              "price": 27085,
-              "url": "https://www.lenovo.com/in/en/search?q=tablet&type=products"
-            },
-            "mi-in": {
-              "id": "mi-in",
-              "name": "Mi.com India",
-              "icon": "🔴",
-              "region": "IN",
-              "currency": "INR",
-              "mult": 0.97,
-              "price": 26669,
-              "url": "https://www.mi.com/in/search#q=tablet"
-            },
-            "amazon-ae": {
-              "id": "amazon-ae",
-              "name": "Amazon.ae",
-              "icon": "📦",
-              "region": "AE",
-              "currency": "AED",
-              "mult": 1,
-              "price": 1216,
-              "url": "https://www.amazon.ae/s?k=Apple+iPad+10th+generation&i=electronics"
-            },
-            "noon": {
-              "id": "noon",
-              "name": "Noon",
-              "icon": "🌙",
-              "region": "AE",
-              "currency": "AED",
-              "mult": 0.97,
-              "price": 1177,
-              "url": "https://www.noon.com/uae-en/search/?q=Apple+iPad+10th+generation"
-            },
-            "sharaf": {
-              "id": "sharaf",
-              "name": "Sharaf DG",
-              "icon": "🏪",
-              "region": "AE",
-              "currency": "AED",
-              "mult": 1.02,
-              "price": 1252,
-              "url": "https://uae.sharafdg.com/search/?q=Apple+iPad+10th+generation"
-            },
-            "emax": {
-              "id": "emax",
-              "name": "Emax",
-              "icon": "🔌",
-              "region": "AE",
-              "currency": "AED",
-              "mult": 1.01,
-              "price": 1231,
-              "url": "https://www.emaxuae.com/catalogsearch/result/?q=Apple+iPad+10th+generation"
-            },
-            "jumbo": {
-              "id": "jumbo",
-              "name": "Jumbo Electronics",
-              "icon": "🐘",
-              "region": "AE",
-              "currency": "AED",
-              "mult": 0.98,
-              "price": 1174,
-              "url": "https://www.jumbo.ae/search?q=Apple+iPad+10th+generation"
-            },
-            "istyle": {
-              "id": "istyle",
-              "name": "iSTYLE UAE",
-              "icon": "🍏",
-              "region": "AE",
-              "currency": "AED",
-              "mult": 1,
-              "price": 1213,
-              "url": "https://istyle.ae/search?type=product&q=iPad+10th+generation"
-            }
-          },
-          "cheapestIN": {
-            "storeId": "jiomart",
-            "storeName": "JioMart",
-            "price": 26038,
-            "url": "https://www.jiomart.com/catalogsearch/result/?q=Apple+iPad+10th+generation",
-            "icon": "🛍️"
-          },
-          "cheapestAE": {
-            "storeId": "jumbo",
-            "storeName": "Jumbo Electronics",
-            "price": 1174,
-            "url": "https://www.jumbo.ae/search?q=Apple+iPad+10th+generation",
-            "icon": "🐘"
-          }
-        },
-        "ipad-11-2025": {
-          "id": "ipad-11-2025",
-          "name": "iPad 11 (2025)",
-          "stores": {
-            "amazon-in": {
-              "id": "amazon-in",
-              "name": "Amazon.in",
-              "icon": "📦",
-              "region": "IN",
-              "currency": "INR",
-              "mult": 1,
-              "price": 63580,
-              "url": "https://www.amazon.in/s?k=Apple+iPad+11th+generation+2025+A16&i=electronics"
-            },
-            "flipkart": {
-              "id": "flipkart",
-              "name": "Flipkart",
-              "icon": "🛒",
-              "region": "IN",
-              "currency": "INR",
-              "mult": 0.97,
-              "price": 63843,
-              "url": "https://www.flipkart.com/search?q=Apple+iPad+A16+2025&otracker=search"
-            },
-            "croma": {
-              "id": "croma",
-              "name": "Croma",
-              "icon": "⚡",
-              "region": "IN",
-              "currency": "INR",
-              "mult": 1.02,
-              "price": 64665,
-              "url": "https://www.croma.com/searchB?q=Apple+iPad+A16+2025"
-            },
-            "reliance": {
-              "id": "reliance",
-              "name": "Reliance Digital",
-              "icon": "📱",
-              "region": "IN",
-              "currency": "INR",
-              "mult": 1.01,
-              "price": 65460,
-              "url": "https://www.reliancedigital.in/search?q=Apple+iPad+2025"
-            },
-            "vijay-sales": {
-              "id": "vijay-sales",
-              "name": "Vijay Sales",
-              "icon": "🏬",
-              "region": "IN",
-              "currency": "INR",
-              "mult": 0.99,
-              "price": 65489,
-              "url": "https://www.vijaysales.com/search/apple-ipad-2025"
-            },
-            "jiomart": {
-              "id": "jiomart",
-              "name": "JioMart",
-              "icon": "🛍️",
-              "region": "IN",
-              "currency": "INR",
-              "mult": 0.96,
-              "price": 62972,
-              "url": "https://www.jiomart.com/catalogsearch/result/?q=Apple+iPad+A16+2025"
-            },
-            "lenovo-in": {
-              "id": "lenovo-in",
-              "name": "Lenovo.com",
-              "icon": "🖥️",
-              "region": "IN",
-              "currency": "INR",
-              "mult": 0.98,
-              "price": 64459,
-              "url": "https://www.lenovo.com/in/en/search?q=tablet&type=products"
-            },
-            "mi-in": {
-              "id": "mi-in",
-              "name": "Mi.com India",
-              "icon": "🔴",
-              "region": "IN",
-              "currency": "INR",
-              "mult": 0.97,
-              "price": 64307,
-              "url": "https://www.mi.com/in/search#q=tablet"
-            },
-            "amazon-ae": {
-              "id": "amazon-ae",
-              "name": "Amazon.ae",
-              "icon": "📦",
-              "region": "AE",
-              "currency": "AED",
-              "mult": 1,
-              "price": 2732,
-              "url": "https://www.amazon.ae/s?k=Apple+iPad+11th+generation+2025+A16&i=electronics"
-            },
-            "noon": {
-              "id": "noon",
-              "name": "Noon",
-              "icon": "🌙",
-              "region": "AE",
-              "currency": "AED",
-              "mult": 0.97,
-              "price": 2676,
-              "url": "https://www.noon.com/uae-en/search/?q=Apple+iPad+A16+2025"
-            },
-            "sharaf": {
-              "id": "sharaf",
-              "name": "Sharaf DG",
-              "icon": "🏪",
-              "region": "AE",
-              "currency": "AED",
-              "mult": 1.02,
-              "price": 2872,
-              "url": "https://uae.sharafdg.com/ipad-11/"
-            },
-            "emax": {
-              "id": "emax",
-              "name": "Emax",
-              "icon": "🔌",
-              "region": "AE",
-              "currency": "AED",
-              "mult": 1.01,
-              "price": 2802,
-              "url": "https://www.emaxuae.com/catalogsearch/result/?q=Apple+iPad+2025"
-            },
-            "jumbo": {
-              "id": "jumbo",
-              "name": "Jumbo Electronics",
-              "icon": "🐘",
-              "region": "AE",
-              "currency": "AED",
-              "mult": 0.98,
-              "price": 2684,
-              "url": "https://www.jumbo.ae/ipad-11-2025"
-            },
-            "istyle": {
-              "id": "istyle",
-              "name": "iSTYLE UAE",
-              "icon": "🍏",
-              "region": "AE",
-              "currency": "AED",
-              "mult": 1,
-              "price": 2817,
-              "url": "https://istyle.ae/collections/apple-ipad-a16-2025"
-            }
-          },
-          "cheapestIN": {
-            "storeId": "jiomart",
-            "storeName": "JioMart",
-            "price": 62972,
-            "url": "https://www.jiomart.com/catalogsearch/result/?q=Apple+iPad+A16+2025",
-            "icon": "🛍️"
-          },
-          "cheapestAE": {
-            "storeId": "noon",
-            "storeName": "Noon",
-            "price": 2676,
-            "url": "https://www.noon.com/uae-en/search/?q=Apple+iPad+A16+2025",
-            "icon": "🌙"
-          }
-        }
-      }
-    },
     {
       "timestamp": "2026-06-07T06:46:00.346Z",
       "products": {
@@ -46132,6 +45327,262 @@
               "title": "Apple iPad (10th Gen) 64 GB ROM 10.9 inch with Wi-Fi Only Gaming A14 Bionic Chip (Pink) Price in Ind",
               "url": "https://www.flipkart.com/apple-ipad-10th-gen-64-gb-rom-10-9-inch-wi-fi-only-pink/p/itmaf20456d05879"
             },
+            "apple": {
+              "id": "apple",
+              "name": "Apple Store",
+              "icon": "🍎",
+              "domain": "apple.com",
+              "region": "IN",
+              "currency": "INR",
+              "price": 49900,
+              "title": "Buy iPad",
+              "url": "https://www.apple.com/in/shop/buy-ipad/ipad"
+            },
+            "iplanet": {
+              "id": "iplanet",
+              "name": "Iplanet",
+              "icon": "🏪",
+              "domain": "iplanet.one",
+              "region": "IN",
+              "currency": "INR",
+              "price": 29900,
+              "title": "Apple 10.9-inch iPad Wi-Fi 64GB - Silver (10th generation)",
+              "url": "https://iplanet.one/products/2022-10-9-inch-ipad-10th-generation-mpq03hn-a"
+            },
+            "timesofindia": {
+              "id": "timesofindia",
+              "name": "Timesofindia",
+              "icon": "🏪",
+              "domain": "timesofindia.indiatimes.com",
+              "region": "IN",
+              "currency": "INR",
+              "price": 23999,
+              "title": "Apple iPad 10th Gen (64GB, Wi-Fi) available for Rs 13,449 on Amazon; here’s how you can grab the dea",
+              "url": "https://timesofindia.indiatimes.com/technology/mobiles-tabs/apple-ipad-10th-gen-64gb-wi-fi-available-for-rs-13449-on-amazon-heres-how-you-can-grab-the-deal/articleshow/114226479.cms"
+            },
+            "amazon": {
+              "id": "amazon",
+              "name": "Amazon.ae",
+              "icon": "📦",
+              "domain": "amazon.ae",
+              "region": "AE",
+              "currency": "AED",
+              "price": 950,
+              "title": "Amazon.ae",
+              "url": "https://www.amazon.ae/s?k=Apple+iPad+10th+generation&i=electronics"
+            },
+            "istyle": {
+              "id": "istyle",
+              "name": "iSTYLE UAE",
+              "icon": "🍏",
+              "domain": "istyle.ae",
+              "region": "AE",
+              "currency": "AED",
+              "price": 999,
+              "title": "Search: 4 results found for \"iPad 10th generation\" – iSTYLE UAE",
+              "url": "https://istyle.ae/search?type=product&q=iPad+10th+generation"
+            }
+          },
+          "cheapestIN": {
+            "storeId": "timesofindia",
+            "storeName": "Timesofindia",
+            "price": 23999,
+            "url": "https://timesofindia.indiatimes.com/technology/mobiles-tabs/apple-ipad-10th-gen-64gb-wi-fi-available-for-rs-13449-on-amazon-heres-how-you-can-grab-the-deal/articleshow/114226479.cms",
+            "icon": "🏪"
+          },
+          "cheapestAE": {
+            "storeId": "amazon",
+            "storeName": "Amazon.ae",
+            "price": 950,
+            "url": "https://www.amazon.ae/s?k=Apple+iPad+10th+generation&i=electronics",
+            "icon": "📦"
+          }
+        },
+        "ipad-11-2025": {
+          "id": "ipad-11-2025",
+          "name": "iPad 11 (2025)",
+          "stores": {
+            "flipkart": {
+              "id": "flipkart",
+              "name": "Flipkart",
+              "icon": "🛒",
+              "domain": "flipkart.com",
+              "region": "IN",
+              "currency": "INR",
+              "price": 34900,
+              "title": "Apple 2025 iPad (A16) 128 GB ROM 11 inch with Wi-Fi Only Gaming A16 Bionic Chip (Blue) Price in Indi",
+              "url": "https://www.flipkart.com/apple-2025-ipad-a16-128-gb-rom-11-0-inch-wi-fi-only-blue/p/itm00526b87c1374"
+            },
+            "apple": {
+              "id": "apple",
+              "name": "Apple Store",
+              "icon": "🍎",
+              "domain": "apple.com",
+              "region": "AE",
+              "currency": "AED",
+              "price": 1999,
+              "title": "Buy iPad",
+              "url": "https://www.apple.com/ae/shop/buy-ipad/ipad"
+            },
+            "amazon": {
+              "id": "amazon",
+              "name": "Amazon.ae",
+              "icon": "📦",
+              "domain": "amazon.ae",
+              "region": "AE",
+              "currency": "AED",
+              "price": 1299,
+              "title": "Amazon.ae",
+              "url": "https://www.amazon.ae/s?k=Apple+iPad+11th+generation+2025+A16&i=electronics"
+            },
+            "jumbo": {
+              "id": "jumbo",
+              "name": "Jumbo Electronics",
+              "icon": "🐘",
+              "domain": "jumbo.ae",
+              "region": "AE",
+              "currency": "AED",
+              "price": 1399,
+              "title": "iPad 11-inch (A16)",
+              "url": "https://www.jumbo.ae/ipad-11-2025"
+            },
+            "istyle": {
+              "id": "istyle",
+              "name": "iSTYLE UAE",
+              "icon": "🍏",
+              "domain": "istyle.ae",
+              "region": "AE",
+              "currency": "AED",
+              "price": 1399,
+              "title": "Buy iPad A16 at best prices Online in Dubai, Abu Dhabi & Sharjah – iSTYLE UAE",
+              "url": "https://istyle.ae/collections/apple-ipad-a16-2025"
+            }
+          },
+          "cheapestIN": {
+            "storeId": "flipkart",
+            "storeName": "Flipkart",
+            "price": 34900,
+            "url": "https://www.flipkart.com/apple-2025-ipad-a16-128-gb-rom-11-0-inch-wi-fi-only-blue/p/itm00526b87c1374",
+            "icon": "🛒"
+          },
+          "cheapestAE": {
+            "storeId": "amazon",
+            "storeName": "Amazon.ae",
+            "price": 1299,
+            "url": "https://www.amazon.ae/s?k=Apple+iPad+11th+generation+2025+A16&i=electronics",
+            "icon": "📦"
+          }
+        }
+      }
+    },
+    {
+      "timestamp": "2026-06-27T11:23:01.990Z",
+      "products": {
+        "lenovo-idea-tab": {
+          "id": "lenovo-idea-tab",
+          "name": "Lenovo IdeaTab",
+          "stores": {
+            "amazon": {
+              "id": "amazon",
+              "name": "Amazon.ae",
+              "icon": "📦",
+              "domain": "amazon.ae",
+              "region": "AE",
+              "currency": "AED",
+              "price": 2299,
+              "title": "Amazon.ae",
+              "url": "https://www.amazon.ae/s?k=Lenovo+IdeaTab&i=electronics"
+            },
+            "moglix": {
+              "id": "moglix",
+              "name": "Moglix",
+              "icon": "🏪",
+              "domain": "moglix.com",
+              "region": "IN",
+              "currency": "INR",
+              "price": 14679,
+              "title": "Buy Lenovo Tablets Online at Best Prices in India | 21 Jun 2026",
+              "url": "https://www.moglix.com/brands/lenovo/it-electronics/computers/tablets/250100000"
+            },
+            "istyle": {
+              "id": "istyle",
+              "name": "iSTYLE UAE",
+              "icon": "🍏",
+              "domain": "istyle.ae",
+              "region": "AE",
+              "currency": "AED",
+              "price": 1000,
+              "title": "Search: 0 results found for \"Lenovo IdeaTab\" – iSTYLE UAE",
+              "url": "https://istyle.ae/search?type=product&q=Lenovo+IdeaTab"
+            }
+          },
+          "cheapestIN": {
+            "storeId": "moglix",
+            "storeName": "Moglix",
+            "price": 14679,
+            "url": "https://www.moglix.com/brands/lenovo/it-electronics/computers/tablets/250100000",
+            "icon": "🏪"
+          },
+          "cheapestAE": {
+            "storeId": "istyle",
+            "storeName": "iSTYLE UAE",
+            "price": 1000,
+            "url": "https://istyle.ae/search?type=product&q=Lenovo+IdeaTab",
+            "icon": "🍏"
+          }
+        },
+        "lenovo-legion-tab": {
+          "id": "lenovo-legion-tab",
+          "name": "Lenovo Legion Tab",
+          "stores": {
+            "amazon": {
+              "id": "amazon",
+              "name": "Amazon.ae",
+              "icon": "📦",
+              "domain": "amazon.ae",
+              "region": "AE",
+              "currency": "AED",
+              "price": 2139.27,
+              "title": "Amazon.ae",
+              "url": "https://www.amazon.ae/s?k=Lenovo+Legion+Tab&i=electronics"
+            }
+          },
+          "cheapestAE": {
+            "storeId": "amazon",
+            "storeName": "Amazon.ae",
+            "price": 2139.27,
+            "url": "https://www.amazon.ae/s?k=Lenovo+Legion+Tab&i=electronics",
+            "icon": "📦"
+          }
+        },
+        "xiaomi-pad-7": {
+          "id": "xiaomi-pad-7",
+          "name": "Xiaomi Pad 7",
+          "stores": {
+            "amazon": {
+              "id": "amazon",
+              "name": "Amazon.ae",
+              "icon": "📦",
+              "domain": "amazon.ae",
+              "region": "AE",
+              "currency": "AED",
+              "price": 1115,
+              "title": "Amazon.ae",
+              "url": "https://www.amazon.ae/s?k=Xiaomi+Pad+7&i=electronics"
+            }
+          },
+          "cheapestAE": {
+            "storeId": "amazon",
+            "storeName": "Amazon.ae",
+            "price": 1115,
+            "url": "https://www.amazon.ae/s?k=Xiaomi+Pad+7&i=electronics",
+            "icon": "📦"
+          }
+        },
+        "ipad-10": {
+          "id": "ipad-10",
+          "name": "iPad 10 (2022)",
+          "stores": {
             "apple": {
               "id": "apple",
               "name": "Apple Store",
