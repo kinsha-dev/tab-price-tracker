@@ -1,331 +1,6 @@
 {
-  "lastUpdated": "2026-06-27T17:01:32.744Z",
+  "lastUpdated": "2026-06-27T19:07:52.320Z",
   "history": [
-    {
-      "timestamp": "2026-06-07T09:28:01.501Z",
-      "products": {
-        "lenovo-idea-tab": {
-          "id": "lenovo-idea-tab",
-          "name": "Lenovo IdeaTab",
-          "stores": {
-            "amazon": {
-              "id": "amazon",
-              "name": "Amazon.ae",
-              "icon": "📦",
-              "domain": "amazon.ae",
-              "region": "AE",
-              "currency": "AED",
-              "price": 1499,
-              "title": "Amazon.ae",
-              "url": "https://www.amazon.ae/s?k=Lenovo+IdeaTab&i=electronics"
-            },
-            "moglix": {
-              "id": "moglix",
-              "name": "Moglix",
-              "icon": "🏪",
-              "domain": "moglix.com",
-              "region": "IN",
-              "currency": "INR",
-              "price": 17599,
-              "title": "Buy Lenovo Tablets Online at Best Prices in India | 07 Jun 2026",
-              "url": "https://www.moglix.com/brands/lenovo/it-electronics/computers/tablets/250100000"
-            },
-            "istyle": {
-              "id": "istyle",
-              "name": "iSTYLE UAE",
-              "icon": "🍏",
-              "domain": "istyle.ae",
-              "region": "AE",
-              "currency": "AED",
-              "price": 1000,
-              "title": "Search: 0 results found for \"Lenovo IdeaTab\" – iSTYLE UAE",
-              "url": "https://istyle.ae/search?type=product&q=Lenovo+IdeaTab"
-            }
-          },
-          "cheapestIN": {
-            "storeId": "moglix",
-            "storeName": "Moglix",
-            "price": 17599,
-            "url": "https://www.moglix.com/brands/lenovo/it-electronics/computers/tablets/250100000",
-            "icon": "🏪"
-          },
-          "cheapestAE": {
-            "storeId": "istyle",
-            "storeName": "iSTYLE UAE",
-            "price": 1000,
-            "url": "https://istyle.ae/search?type=product&q=Lenovo+IdeaTab",
-            "icon": "🍏"
-          }
-        },
-        "lenovo-legion-tab": {
-          "id": "lenovo-legion-tab",
-          "name": "Lenovo Legion Tab",
-          "stores": {
-            "flipkart": {
-              "id": "flipkart",
-              "name": "Flipkart",
-              "icon": "🛒",
-              "domain": "flipkart.com",
-              "region": "IN",
-              "currency": "INR",
-              "price": 20999,
-              "title": "Lenovo Legion 12 GB RAM 256 GB ROM 8.8 inch with Wi-Fi Only Gaming Qualcomm Snapdragon 8+ Gen 1 Tabl",
-              "url": "https://www.flipkart.com/lenovo-legion-12-gb-ram-256-rom-8-8-inch-wi-fi-only-tablet-storm-grey/p/itm0ef682882fb16"
-            },
-            "amazon": {
-              "id": "amazon",
-              "name": "Amazon.ae",
-              "icon": "📦",
-              "domain": "amazon.ae",
-              "region": "AE",
-              "currency": "AED",
-              "price": 2084.35,
-              "title": "Amazon.ae",
-              "url": "https://www.amazon.ae/s?k=Lenovo+Legion+Tab&i=electronics"
-            }
-          },
-          "cheapestIN": {
-            "storeId": "flipkart",
-            "storeName": "Flipkart",
-            "price": 20999,
-            "url": "https://www.flipkart.com/lenovo-legion-12-gb-ram-256-rom-8-8-inch-wi-fi-only-tablet-storm-grey/p/itm0ef682882fb16",
-            "icon": "🛒"
-          },
-          "cheapestAE": {
-            "storeId": "amazon",
-            "storeName": "Amazon.ae",
-            "price": 2084.35,
-            "url": "https://www.amazon.ae/s?k=Lenovo+Legion+Tab&i=electronics",
-            "icon": "📦"
-          }
-        },
-        "xiaomi-pad-7": {
-          "id": "xiaomi-pad-7",
-          "name": "Xiaomi Pad 7",
-          "stores": {
-            "flipkart": {
-              "id": "flipkart",
-              "name": "Flipkart",
-              "icon": "🛒",
-              "domain": "flipkart.com",
-              "region": "IN",
-              "currency": "INR",
-              "price": 33598,
-              "title": "Xiaomi Pad 7 12 GB RAM 256 GB ROM 11.17 inch with Wi-Fi Only Gaming Qualcomm Snapdragon 7+ Gen 3 Tab",
-              "url": "https://www.flipkart.com/xiaomi-pad-7-12-gb-ram-256-rom-11-17-inch-wi-fi-only-gaming-tablet-sage-green/p/itmf3e891cb1745c"
-            },
-            "amazon": {
-              "id": "amazon",
-              "name": "Amazon.ae",
-              "icon": "📦",
-              "domain": "amazon.ae",
-              "region": "AE",
-              "currency": "AED",
-              "price": 895,
-              "title": "Amazon.ae",
-              "url": "https://www.amazon.ae/s?k=Xiaomi+Pad+7&i=electronics"
-            }
-          },
-          "cheapestIN": {
-            "storeId": "flipkart",
-            "storeName": "Flipkart",
-            "price": 33598,
-            "url": "https://www.flipkart.com/xiaomi-pad-7-12-gb-ram-256-rom-11-17-inch-wi-fi-only-gaming-tablet-sage-green/p/itmf3e891cb1745c",
-            "icon": "🛒"
-          },
-          "cheapestAE": {
-            "storeId": "amazon",
-            "storeName": "Amazon.ae",
-            "price": 895,
-            "url": "https://www.amazon.ae/s?k=Xiaomi+Pad+7&i=electronics",
-            "icon": "📦"
-          }
-        },
-        "ipad-10": {
-          "id": "ipad-10",
-          "name": "iPad 10 (2022)",
-          "stores": {
-            "flipkart": {
-              "id": "flipkart",
-              "name": "Flipkart",
-              "icon": "🛒",
-              "domain": "flipkart.com",
-              "region": "IN",
-              "currency": "INR",
-              "price": 27399,
-              "title": "Apple iPad (10th Gen) 64 GB ROM 10.9 inch with Wi-Fi Only A14 Bionic Chip (Pink) Price in India - Bu",
-              "url": "https://www.flipkart.com/apple-ipad-10th-gen-64-gb-rom-10-9-inch-wi-fi-only-pink/p/itmaf20456d05879"
-            },
-            "apple": {
-              "id": "apple",
-              "name": "Apple Store",
-              "icon": "🍎",
-              "domain": "apple.com",
-              "region": "IN",
-              "currency": "INR",
-              "price": 5317,
-              "title": "Buy iPad",
-              "url": "https://www.apple.com/in/shop/buy-ipad/ipad"
-            },
-            "vijaysales": {
-              "id": "vijaysales",
-              "name": "Vijay Sales",
-              "icon": "🏬",
-              "domain": "vijaysales.com",
-              "region": "IN",
-              "currency": "INR",
-              "price": 19900,
-              "title": "Buy Store Display Unit - Apple iPad 10th Generation Wi-Fi 10.9 Inch, 64GB, Blue 3L204HN/A (1 Year On",
-              "url": "https://www.vijaysales.com/p/211954/store-display-unit-apple-ipad-10th-generation-wi-fi-109-inch-64gb-blue-3l204hna"
-            },
-            "timesofindia": {
-              "id": "timesofindia",
-              "name": "Timesofindia",
-              "icon": "🏪",
-              "domain": "timesofindia.indiatimes.com",
-              "region": "IN",
-              "currency": "INR",
-              "price": 23999,
-              "title": "Apple iPad 10th Gen (64GB, Wi-Fi) available for Rs 13,449 on Amazon; here’s how you can grab the dea",
-              "url": "https://timesofindia.indiatimes.com/technology/mobiles-tabs/apple-ipad-10th-gen-64gb-wi-fi-available-for-rs-13449-on-amazon-heres-how-you-can-grab-the-deal/articleshow/114226479.cms"
-            },
-            "iplanet": {
-              "id": "iplanet",
-              "name": "Iplanet",
-              "icon": "🏪",
-              "domain": "iplanet.one",
-              "region": "IN",
-              "currency": "INR",
-              "price": 5218.44,
-              "title": "iPad 10th Generation | Silver | 64GB | Wi-Fi",
-              "url": "https://iplanet.one/products/2022-10-9-inch-ipad-10th-generation-mpq03hn-a"
-            },
-            "amazon": {
-              "id": "amazon",
-              "name": "Amazon.ae",
-              "icon": "📦",
-              "domain": "amazon.ae",
-              "region": "AE",
-              "currency": "AED",
-              "price": 2349,
-              "title": "Amazon.ae",
-              "url": "https://www.amazon.ae/s?k=Apple+iPad+10th+generation&i=electronics"
-            },
-            "istyle": {
-              "id": "istyle",
-              "name": "iSTYLE UAE",
-              "icon": "🍏",
-              "domain": "istyle.ae",
-              "region": "AE",
-              "currency": "AED",
-              "price": 999,
-              "title": "Search: 4 results found for \"iPad 10th generation\" – iSTYLE UAE",
-              "url": "https://istyle.ae/search?type=product&q=iPad+10th+generation"
-            }
-          },
-          "cheapestIN": {
-            "storeId": "iplanet",
-            "storeName": "Iplanet",
-            "price": 5218.44,
-            "url": "https://iplanet.one/products/2022-10-9-inch-ipad-10th-generation-mpq03hn-a",
-            "icon": "🏪"
-          },
-          "cheapestAE": {
-            "storeId": "istyle",
-            "storeName": "iSTYLE UAE",
-            "price": 999,
-            "url": "https://istyle.ae/search?type=product&q=iPad+10th+generation",
-            "icon": "🍏"
-          }
-        },
-        "ipad-11-2025": {
-          "id": "ipad-11-2025",
-          "name": "iPad 11 (2025)",
-          "stores": {
-            "apple": {
-              "id": "apple",
-              "name": "Apple Store",
-              "icon": "🍎",
-              "domain": "apple.com",
-              "region": "AE",
-              "currency": "AED",
-              "price": 1399,
-              "title": "Buy iPad",
-              "url": "https://www.apple.com/ae/shop/buy-ipad/ipad"
-            },
-            "flipkart": {
-              "id": "flipkart",
-              "name": "Flipkart",
-              "icon": "🛒",
-              "domain": "flipkart.com",
-              "region": "IN",
-              "currency": "INR",
-              "price": 34900,
-              "title": "Apple 2025 iPad (A16) 128 GB ROM 11.0 inch with Wi-Fi Only A16 chip (Blue) Price in India - Buy Appl",
-              "url": "https://www.flipkart.com/apple-ipad-11th-gen-128-gb-rom-11-0-inch-wi-fi-only-blue/p/itm00526b87c1374"
-            },
-            "amazon": {
-              "id": "amazon",
-              "name": "Amazon.ae",
-              "icon": "📦",
-              "domain": "amazon.ae",
-              "region": "AE",
-              "currency": "AED",
-              "price": 1249.98,
-              "title": "Amazon.ae",
-              "url": "https://www.amazon.ae/s?k=Apple+iPad+11th+generation+2025+A16&i=electronics"
-            },
-            "uae": {
-              "id": "uae",
-              "name": "Sharaf DG",
-              "icon": "🏪",
-              "domain": "uae.sharafdg.com",
-              "region": "AE",
-              "currency": "AED",
-              "price": 2549,
-              "title": "Buy the Latest iPad 11 at Sharaf DG in Dubai, UAE – Best Deals & Offers in UAE",
-              "url": "https://uae.sharafdg.com/ipad-11/"
-            },
-            "jumbo": {
-              "id": "jumbo",
-              "name": "Jumbo Electronics",
-              "icon": "🐘",
-              "domain": "jumbo.ae",
-              "region": "AE",
-              "currency": "AED",
-              "price": 1399.001299,
-              "title": "iPad 11-inch (A16)",
-              "url": "https://www.jumbo.ae/ipad-11-2025"
-            },
-            "istyle": {
-              "id": "istyle",
-              "name": "iSTYLE UAE",
-              "icon": "🍏",
-              "domain": "istyle.ae",
-              "region": "AE",
-              "currency": "AED",
-              "price": 1399,
-              "title": "Buy iPad A16 at best prices Online in Dubai, Abu Dhabi & Sharjah – iSTYLE UAE",
-              "url": "https://istyle.ae/collections/apple-ipad-a16-2025"
-            }
-          },
-          "cheapestIN": {
-            "storeId": "flipkart",
-            "storeName": "Flipkart",
-            "price": 34900,
-            "url": "https://www.flipkart.com/apple-ipad-11th-gen-128-gb-rom-11-0-inch-wi-fi-only-blue/p/itm00526b87c1374",
-            "icon": "🛒"
-          },
-          "cheapestAE": {
-            "storeId": "amazon",
-            "storeName": "Amazon.ae",
-            "price": 1249.98,
-            "url": "https://www.amazon.ae/s?k=Apple+iPad+11th+generation+2025+A16&i=electronics",
-            "icon": "📦"
-          }
-        }
-      }
-    },
     {
       "timestamp": "2026-06-07T09:32:36.731Z",
       "products": {
@@ -43972,6 +43647,302 @@
           "id": "ipad-10",
           "name": "iPad 10 (2022)",
           "stores": {
+            "apple": {
+              "id": "apple",
+              "name": "Apple Store",
+              "icon": "🍎",
+              "domain": "apple.com",
+              "region": "IN",
+              "currency": "INR",
+              "price": 49900,
+              "title": "Buy iPad",
+              "url": "https://www.apple.com/in/shop/buy-ipad/ipad"
+            },
+            "iplanet": {
+              "id": "iplanet",
+              "name": "Iplanet",
+              "icon": "🏪",
+              "domain": "iplanet.one",
+              "region": "IN",
+              "currency": "INR",
+              "price": 29900,
+              "title": "Apple 10.9-inch iPad Wi-Fi 64GB - Silver (10th generation)",
+              "url": "https://iplanet.one/products/2022-10-9-inch-ipad-10th-generation-mpq03hn-a"
+            },
+            "timesofindia": {
+              "id": "timesofindia",
+              "name": "Timesofindia",
+              "icon": "🏪",
+              "domain": "timesofindia.indiatimes.com",
+              "region": "IN",
+              "currency": "INR",
+              "price": 23999,
+              "title": "Apple iPad 10th Gen (64GB, Wi-Fi) available for Rs 13,449 on Amazon; here’s how you can grab the dea",
+              "url": "https://timesofindia.indiatimes.com/technology/mobiles-tabs/apple-ipad-10th-gen-64gb-wi-fi-available-for-rs-13449-on-amazon-heres-how-you-can-grab-the-deal/articleshow/114226479.cms"
+            },
+            "amazon": {
+              "id": "amazon",
+              "name": "Amazon.ae",
+              "icon": "📦",
+              "domain": "amazon.ae",
+              "region": "AE",
+              "currency": "AED",
+              "price": 2399,
+              "title": "Amazon.ae",
+              "url": "https://www.amazon.ae/s?k=Apple+iPad+10th+generation&i=electronics"
+            },
+            "istyle": {
+              "id": "istyle",
+              "name": "iSTYLE UAE",
+              "icon": "🍏",
+              "domain": "istyle.ae",
+              "region": "AE",
+              "currency": "AED",
+              "price": 999,
+              "title": "Search: 4 results found for \"iPad 10th generation\" – iSTYLE UAE",
+              "url": "https://istyle.ae/search?type=product&q=iPad+10th+generation"
+            }
+          },
+          "cheapestIN": {
+            "storeId": "timesofindia",
+            "storeName": "Timesofindia",
+            "price": 23999,
+            "url": "https://timesofindia.indiatimes.com/technology/mobiles-tabs/apple-ipad-10th-gen-64gb-wi-fi-available-for-rs-13449-on-amazon-heres-how-you-can-grab-the-deal/articleshow/114226479.cms",
+            "icon": "🏪"
+          },
+          "cheapestAE": {
+            "storeId": "istyle",
+            "storeName": "iSTYLE UAE",
+            "price": 999,
+            "url": "https://istyle.ae/search?type=product&q=iPad+10th+generation",
+            "icon": "🍏"
+          }
+        },
+        "ipad-11-2025": {
+          "id": "ipad-11-2025",
+          "name": "iPad 11 (2025)",
+          "stores": {
+            "apple": {
+              "id": "apple",
+              "name": "Apple Store",
+              "icon": "🍎",
+              "domain": "apple.com",
+              "region": "AE",
+              "currency": "AED",
+              "price": 1999,
+              "title": "Buy iPad",
+              "url": "https://www.apple.com/ae/shop/buy-ipad/ipad"
+            },
+            "amazon": {
+              "id": "amazon",
+              "name": "Amazon.ae",
+              "icon": "📦",
+              "domain": "amazon.ae",
+              "region": "AE",
+              "currency": "AED",
+              "price": 1329.05,
+              "title": "Amazon.ae",
+              "url": "https://www.amazon.ae/s?k=Apple+iPad+11th+generation+2025+A16&i=electronics"
+            },
+            "jumbo": {
+              "id": "jumbo",
+              "name": "Jumbo Electronics",
+              "icon": "🐘",
+              "domain": "jumbo.ae",
+              "region": "AE",
+              "currency": "AED",
+              "price": 1399,
+              "title": "iPad 11-inch (A16)",
+              "url": "https://www.jumbo.ae/ipad-11-2025"
+            },
+            "istyle": {
+              "id": "istyle",
+              "name": "iSTYLE UAE",
+              "icon": "🍏",
+              "domain": "istyle.ae",
+              "region": "AE",
+              "currency": "AED",
+              "price": 1399,
+              "title": "Buy iPad A16 at best prices Online in Dubai, Abu Dhabi & Sharjah – iSTYLE UAE",
+              "url": "https://istyle.ae/collections/apple-ipad-a16-2025"
+            }
+          },
+          "cheapestAE": {
+            "storeId": "amazon",
+            "storeName": "Amazon.ae",
+            "price": 1329.05,
+            "url": "https://www.amazon.ae/s?k=Apple+iPad+11th+generation+2025+A16&i=electronics",
+            "icon": "📦"
+          }
+        }
+      }
+    },
+    {
+      "timestamp": "2026-06-27T19:07:52.320Z",
+      "products": {
+        "lenovo-idea-tab": {
+          "id": "lenovo-idea-tab",
+          "name": "Lenovo IdeaTab",
+          "stores": {
+            "flipkart": {
+              "id": "flipkart",
+              "name": "Flipkart",
+              "icon": "🛒",
+              "domain": "flipkart.com",
+              "region": "IN",
+              "currency": "INR",
+              "price": 36999,
+              "title": "Lenovo Idea Tab A1000 Tablet Price in India - Buy Lenovo Idea Tab A1000 Tablet Black 4 Online - Leno",
+              "url": "https://www.flipkart.com/lenovo-idea-tab-a1000-tablet/p/itmdtgc5bg8qkwzt"
+            },
+            "moglix": {
+              "id": "moglix",
+              "name": "Moglix",
+              "icon": "🏪",
+              "domain": "moglix.com",
+              "region": "IN",
+              "currency": "INR",
+              "price": 14679,
+              "title": "Buy Lenovo Tablets Online at Best Prices in India | 21 Jun 2026",
+              "url": "https://www.moglix.com/brands/lenovo/it-electronics/computers/tablets/250100000"
+            },
+            "amazon": {
+              "id": "amazon",
+              "name": "Amazon.ae",
+              "icon": "📦",
+              "domain": "amazon.ae",
+              "region": "AE",
+              "currency": "AED",
+              "price": 2299,
+              "title": "Amazon.ae",
+              "url": "https://www.amazon.ae/s?k=Lenovo+IdeaTab&i=electronics"
+            },
+            "istyle": {
+              "id": "istyle",
+              "name": "iSTYLE UAE",
+              "icon": "🍏",
+              "domain": "istyle.ae",
+              "region": "AE",
+              "currency": "AED",
+              "price": 1000,
+              "title": "Search: 0 results found for \"Lenovo IdeaTab\" – iSTYLE UAE",
+              "url": "https://istyle.ae/search?type=product&q=Lenovo+IdeaTab"
+            }
+          },
+          "cheapestIN": {
+            "storeId": "moglix",
+            "storeName": "Moglix",
+            "price": 14679,
+            "url": "https://www.moglix.com/brands/lenovo/it-electronics/computers/tablets/250100000",
+            "icon": "🏪"
+          },
+          "cheapestAE": {
+            "storeId": "istyle",
+            "storeName": "iSTYLE UAE",
+            "price": 1000,
+            "url": "https://istyle.ae/search?type=product&q=Lenovo+IdeaTab",
+            "icon": "🍏"
+          }
+        },
+        "lenovo-legion-tab": {
+          "id": "lenovo-legion-tab",
+          "name": "Lenovo Legion Tab",
+          "stores": {
+            "flipkart": {
+              "id": "flipkart",
+              "name": "Flipkart",
+              "icon": "🛒",
+              "domain": "flipkart.com",
+              "region": "IN",
+              "currency": "INR",
+              "price": 29298,
+              "title": "Lenovo Legion Tab 12 GB RAM 256 GB ROM 8.8 inch with Wi-Fi Only Gaming Qualcomm Snapdragon 8+ Gen 1 ",
+              "url": "https://www.flipkart.com/lenovo-legion-12-gb-ram-256-rom-8-8-inch-wi-fi-only-tablet-storm-grey/p/itm0ef682882fb16"
+            },
+            "amazon": {
+              "id": "amazon",
+              "name": "Amazon.ae",
+              "icon": "📦",
+              "domain": "amazon.ae",
+              "region": "AE",
+              "currency": "AED",
+              "price": 2139.27,
+              "title": "Amazon.ae",
+              "url": "https://www.amazon.ae/s?k=Lenovo+Legion+Tab&i=electronics"
+            }
+          },
+          "cheapestIN": {
+            "storeId": "flipkart",
+            "storeName": "Flipkart",
+            "price": 29298,
+            "url": "https://www.flipkart.com/lenovo-legion-12-gb-ram-256-rom-8-8-inch-wi-fi-only-tablet-storm-grey/p/itm0ef682882fb16",
+            "icon": "🛒"
+          },
+          "cheapestAE": {
+            "storeId": "amazon",
+            "storeName": "Amazon.ae",
+            "price": 2139.27,
+            "url": "https://www.amazon.ae/s?k=Lenovo+Legion+Tab&i=electronics",
+            "icon": "📦"
+          }
+        },
+        "xiaomi-pad-7": {
+          "id": "xiaomi-pad-7",
+          "name": "Xiaomi Pad 7",
+          "stores": {
+            "flipkart": {
+              "id": "flipkart",
+              "name": "Flipkart",
+              "icon": "🛒",
+              "domain": "flipkart.com",
+              "region": "IN",
+              "currency": "INR",
+              "price": 33598,
+              "title": "Xiaomi Pad 7 12 GB RAM 256 GB ROM 11.17 inch with Wi-Fi Only Gaming Qualcomm Snapdragon 7+ Gen 3 Tab",
+              "url": "https://www.flipkart.com/xiaomi-pad-7-12-gb-ram-256-rom-11-17-inch-wi-fi-only-gaming-tablet-sage-green/p/itmf3e891cb1745c"
+            },
+            "amazon": {
+              "id": "amazon",
+              "name": "Amazon.ae",
+              "icon": "📦",
+              "domain": "amazon.ae",
+              "region": "AE",
+              "currency": "AED",
+              "price": 1115,
+              "title": "Amazon.ae",
+              "url": "https://www.amazon.ae/s?k=Xiaomi+Pad+7&i=electronics"
+            }
+          },
+          "cheapestIN": {
+            "storeId": "flipkart",
+            "storeName": "Flipkart",
+            "price": 33598,
+            "url": "https://www.flipkart.com/xiaomi-pad-7-12-gb-ram-256-rom-11-17-inch-wi-fi-only-gaming-tablet-sage-green/p/itmf3e891cb1745c",
+            "icon": "🛒"
+          },
+          "cheapestAE": {
+            "storeId": "amazon",
+            "storeName": "Amazon.ae",
+            "price": 1115,
+            "url": "https://www.amazon.ae/s?k=Xiaomi+Pad+7&i=electronics",
+            "icon": "📦"
+          }
+        },
+        "ipad-10": {
+          "id": "ipad-10",
+          "name": "iPad 10 (2022)",
+          "stores": {
+            "flipkart": {
+              "id": "flipkart",
+              "name": "Flipkart",
+              "icon": "🛒",
+              "domain": "flipkart.com",
+              "region": "IN",
+              "currency": "INR",
+              "price": 27399,
+              "title": "Apple iPad (10th Gen) 64 GB ROM 10.9 inch with Wi-Fi Only Gaming A14 Bionic Chip (Pink) Price in Ind",
+              "url": "https://www.flipkart.com/apple-ipad-10th-gen-64-gb-rom-10-9-inch-wi-fi-only-pink/p/itmaf20456d05879"
+            },
             "apple": {
               "id": "apple",
               "name": "Apple Store",
