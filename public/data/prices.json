@@ -1,244 +1,6 @@
 {
-  "lastUpdated": "2026-07-01T21:20:58.658Z",
+  "lastUpdated": "2026-07-01T23:06:17.413Z",
   "history": [
-    {
-      "timestamp": "2026-06-11T21:55:37.446Z",
-      "products": {
-        "lenovo-idea-tab": {
-          "id": "lenovo-idea-tab",
-          "name": "Lenovo IdeaTab",
-          "stores": {
-            "moglix": {
-              "id": "moglix",
-              "name": "Moglix",
-              "icon": "🏪",
-              "domain": "moglix.com",
-              "region": "IN",
-              "currency": "INR",
-              "price": 17599,
-              "title": "Buy Lenovo Tablets Online at Best Prices in India | 09 Jun 2026",
-              "url": "https://www.moglix.com/brands/lenovo/it-electronics/computers/tablets/250100000"
-            },
-            "amazon": {
-              "id": "amazon",
-              "name": "Amazon.ae",
-              "icon": "📦",
-              "domain": "amazon.ae",
-              "region": "AE",
-              "currency": "AED",
-              "price": 1553.3,
-              "title": "Amazon.ae",
-              "url": "https://www.amazon.ae/s?k=Lenovo+IdeaTab&i=electronics"
-            },
-            "istyle": {
-              "id": "istyle",
-              "name": "iSTYLE UAE",
-              "icon": "🍏",
-              "domain": "istyle.ae",
-              "region": "AE",
-              "currency": "AED",
-              "price": 1000,
-              "title": "Search: 0 results found for \"Lenovo IdeaTab\" – iSTYLE UAE",
-              "url": "https://istyle.ae/search?type=product&q=Lenovo+IdeaTab"
-            }
-          },
-          "cheapestIN": {
-            "storeId": "moglix",
-            "storeName": "Moglix",
-            "price": 17599,
-            "url": "https://www.moglix.com/brands/lenovo/it-electronics/computers/tablets/250100000",
-            "icon": "🏪"
-          },
-          "cheapestAE": {
-            "storeId": "istyle",
-            "storeName": "iSTYLE UAE",
-            "price": 1000,
-            "url": "https://istyle.ae/search?type=product&q=Lenovo+IdeaTab",
-            "icon": "🍏"
-          }
-        },
-        "lenovo-legion-tab": {
-          "id": "lenovo-legion-tab",
-          "name": "Lenovo Legion Tab",
-          "stores": {
-            "amazon": {
-              "id": "amazon",
-              "name": "Amazon.ae",
-              "icon": "📦",
-              "domain": "amazon.ae",
-              "region": "AE",
-              "currency": "AED",
-              "price": 2116.47,
-              "title": "Amazon.ae",
-              "url": "https://www.amazon.ae/s?k=Lenovo+Legion+Tab&i=electronics"
-            }
-          },
-          "cheapestAE": {
-            "storeId": "amazon",
-            "storeName": "Amazon.ae",
-            "price": 2116.47,
-            "url": "https://www.amazon.ae/s?k=Lenovo+Legion+Tab&i=electronics",
-            "icon": "📦"
-          }
-        },
-        "xiaomi-pad-7": {
-          "id": "xiaomi-pad-7",
-          "name": "Xiaomi Pad 7",
-          "stores": {
-            "amazon": {
-              "id": "amazon",
-              "name": "Amazon.ae",
-              "icon": "📦",
-              "domain": "amazon.ae",
-              "region": "AE",
-              "currency": "AED",
-              "price": 1134,
-              "title": "Amazon.ae",
-              "url": "https://www.amazon.ae/s?k=Xiaomi+Pad+7&i=electronics"
-            }
-          },
-          "cheapestAE": {
-            "storeId": "amazon",
-            "storeName": "Amazon.ae",
-            "price": 1134,
-            "url": "https://www.amazon.ae/s?k=Xiaomi+Pad+7&i=electronics",
-            "icon": "📦"
-          }
-        },
-        "ipad-10": {
-          "id": "ipad-10",
-          "name": "iPad 10 (2022)",
-          "stores": {
-            "apple": {
-              "id": "apple",
-              "name": "Apple Store",
-              "icon": "🍎",
-              "domain": "apple.com",
-              "region": "IN",
-              "currency": "INR",
-              "price": 34900,
-              "title": "Buy iPad",
-              "url": "https://www.apple.com/in/shop/buy-ipad/ipad"
-            },
-            "vijaysales": {
-              "id": "vijaysales",
-              "name": "Vijay Sales",
-              "icon": "🏬",
-              "domain": "vijaysales.com",
-              "region": "IN",
-              "currency": "INR",
-              "price": 19900,
-              "title": "Buy Store Display Unit - Apple iPad 10th Generation Wi-Fi 10.9 Inch, 64GB, Blue 3L204HN/A (1 Year On",
-              "url": "https://www.vijaysales.com/p/211954/store-display-unit-apple-ipad-10th-generation-wi-fi-109-inch-64gb-blue-3l204hna"
-            },
-            "timesofindia": {
-              "id": "timesofindia",
-              "name": "Timesofindia",
-              "icon": "🏪",
-              "domain": "timesofindia.indiatimes.com",
-              "region": "IN",
-              "currency": "INR",
-              "price": 23999,
-              "title": "Apple iPad 10th Gen (64GB, Wi-Fi) available for Rs 13,449 on Amazon; here’s how you can grab the dea",
-              "url": "https://timesofindia.indiatimes.com/technology/mobiles-tabs/apple-ipad-10th-gen-64gb-wi-fi-available-for-rs-13449-on-amazon-heres-how-you-can-grab-the-deal/articleshow/114226479.cms"
-            },
-            "amazon": {
-              "id": "amazon",
-              "name": "Amazon.ae",
-              "icon": "📦",
-              "domain": "amazon.ae",
-              "region": "AE",
-              "currency": "AED",
-              "price": 2275,
-              "title": "Amazon.ae",
-              "url": "https://www.amazon.ae/s?k=Apple+iPad+10th+generation&i=electronics"
-            },
-            "istyle": {
-              "id": "istyle",
-              "name": "iSTYLE UAE",
-              "icon": "🍏",
-              "domain": "istyle.ae",
-              "region": "AE",
-              "currency": "AED",
-              "price": 999,
-              "title": "Search: 4 results found for \"iPad 10th generation\" – iSTYLE UAE",
-              "url": "https://istyle.ae/search?type=product&q=iPad+10th+generation"
-            }
-          },
-          "cheapestIN": {
-            "storeId": "vijaysales",
-            "storeName": "Vijay Sales",
-            "price": 19900,
-            "url": "https://www.vijaysales.com/p/211954/store-display-unit-apple-ipad-10th-generation-wi-fi-109-inch-64gb-blue-3l204hna",
-            "icon": "🏬"
-          },
-          "cheapestAE": {
-            "storeId": "istyle",
-            "storeName": "iSTYLE UAE",
-            "price": 999,
-            "url": "https://istyle.ae/search?type=product&q=iPad+10th+generation",
-            "icon": "🍏"
-          }
-        },
-        "ipad-11-2025": {
-          "id": "ipad-11-2025",
-          "name": "iPad 11 (2025)",
-          "stores": {
-            "apple": {
-              "id": "apple",
-              "name": "Apple Store",
-              "icon": "🍎",
-              "domain": "apple.com",
-              "region": "AE",
-              "currency": "AED",
-              "price": 1399,
-              "title": "Buy iPad",
-              "url": "https://www.apple.com/ae/shop/buy-ipad/ipad"
-            },
-            "amazon": {
-              "id": "amazon",
-              "name": "Amazon.ae",
-              "icon": "📦",
-              "domain": "amazon.ae",
-              "region": "AE",
-              "currency": "AED",
-              "price": 1270,
-              "title": "Amazon.ae",
-              "url": "https://www.amazon.ae/s?k=Apple+iPad+11th+generation+2025+A16&i=electronics"
-            },
-            "jumbo": {
-              "id": "jumbo",
-              "name": "Jumbo Electronics",
-              "icon": "🐘",
-              "domain": "jumbo.ae",
-              "region": "AE",
-              "currency": "AED",
-              "price": 1399.001299,
-              "title": "iPad 11-inch (A16)",
-              "url": "https://www.jumbo.ae/ipad-11-2025"
-            },
-            "istyle": {
-              "id": "istyle",
-              "name": "iSTYLE UAE",
-              "icon": "🍏",
-              "domain": "istyle.ae",
-              "region": "AE",
-              "currency": "AED",
-              "price": 1399,
-              "title": "Buy iPad A16 at best prices Online in Dubai, Abu Dhabi & Sharjah – iSTYLE UAE",
-              "url": "https://istyle.ae/collections/apple-ipad-a16-2025"
-            }
-          },
-          "cheapestAE": {
-            "storeId": "amazon",
-            "storeName": "Amazon.ae",
-            "price": 1270,
-            "url": "https://www.amazon.ae/s?k=Apple+iPad+11th+generation+2025+A16&i=electronics",
-            "icon": "📦"
-          }
-        }
-      }
-    },
     {
       "timestamp": "2026-06-11T23:20:43.426Z",
       "products": {
@@ -45195,6 +44957,215 @@
             "price": 34900,
             "url": "https://www.flipkart.com/apple-2025-ipad-a16-128-gb-rom-11-0-inch-wi-fi-only-blue/p/itm00526b87c1374",
             "icon": "🛒"
+          },
+          "cheapestAE": {
+            "storeId": "amazon",
+            "storeName": "Amazon.ae",
+            "price": 1338,
+            "url": "https://www.amazon.ae/s?k=Apple+iPad+11th+generation+2025+A16&i=electronics",
+            "icon": "📦"
+          }
+        }
+      }
+    },
+    {
+      "timestamp": "2026-07-01T23:06:17.413Z",
+      "products": {
+        "lenovo-idea-tab": {
+          "id": "lenovo-idea-tab",
+          "name": "Lenovo IdeaTab",
+          "stores": {
+            "istyle": {
+              "id": "istyle",
+              "name": "iSTYLE UAE",
+              "icon": "🍏",
+              "domain": "istyle.ae",
+              "region": "AE",
+              "currency": "AED",
+              "price": 1000,
+              "title": "Search: 0 results found for \"Lenovo IdeaTab\" – iSTYLE UAE",
+              "url": "https://istyle.ae/search?type=product&q=Lenovo+IdeaTab"
+            }
+          },
+          "cheapestAE": {
+            "storeId": "istyle",
+            "storeName": "iSTYLE UAE",
+            "price": 1000,
+            "url": "https://istyle.ae/search?type=product&q=Lenovo+IdeaTab",
+            "icon": "🍏"
+          }
+        },
+        "lenovo-legion-tab": {
+          "id": "lenovo-legion-tab",
+          "name": "Lenovo Legion Tab",
+          "stores": {
+            "amazon": {
+              "id": "amazon",
+              "name": "Amazon.ae",
+              "icon": "📦",
+              "domain": "amazon.ae",
+              "region": "AE",
+              "currency": "AED",
+              "price": 2089.01,
+              "title": "Amazon.ae",
+              "url": "https://www.amazon.ae/s?k=Lenovo+Legion+Tab&i=electronics"
+            }
+          },
+          "cheapestAE": {
+            "storeId": "amazon",
+            "storeName": "Amazon.ae",
+            "price": 2089.01,
+            "url": "https://www.amazon.ae/s?k=Lenovo+Legion+Tab&i=electronics",
+            "icon": "📦"
+          }
+        },
+        "xiaomi-pad-7": {
+          "id": "xiaomi-pad-7",
+          "name": "Xiaomi Pad 7",
+          "stores": {
+            "amazon": {
+              "id": "amazon",
+              "name": "Amazon.ae",
+              "icon": "📦",
+              "domain": "amazon.ae",
+              "region": "AE",
+              "currency": "AED",
+              "price": 1129,
+              "title": "Amazon.ae",
+              "url": "https://www.amazon.ae/s?k=Xiaomi+Pad+7&i=electronics"
+            }
+          },
+          "cheapestAE": {
+            "storeId": "amazon",
+            "storeName": "Amazon.ae",
+            "price": 1129,
+            "url": "https://www.amazon.ae/s?k=Xiaomi+Pad+7&i=electronics",
+            "icon": "📦"
+          }
+        },
+        "ipad-10": {
+          "id": "ipad-10",
+          "name": "iPad 10 (2022)",
+          "stores": {
+            "apple": {
+              "id": "apple",
+              "name": "Apple Store",
+              "icon": "🍎",
+              "domain": "apple.com",
+              "region": "IN",
+              "currency": "INR",
+              "price": 49900,
+              "title": "Buy iPad",
+              "url": "https://www.apple.com/in/shop/buy-ipad/ipad"
+            },
+            "timesofindia": {
+              "id": "timesofindia",
+              "name": "Timesofindia",
+              "icon": "🏪",
+              "domain": "timesofindia.indiatimes.com",
+              "region": "IN",
+              "currency": "INR",
+              "price": 23999,
+              "title": "Apple iPad 10th Gen (64GB, Wi-Fi) available for Rs 13,449 on Amazon; here’s how you can grab the dea",
+              "url": "https://timesofindia.indiatimes.com/technology/mobiles-tabs/apple-ipad-10th-gen-64gb-wi-fi-available-for-rs-13449-on-amazon-heres-how-you-can-grab-the-deal/articleshow/114226479.cms"
+            },
+            "iplanet": {
+              "id": "iplanet",
+              "name": "Iplanet",
+              "icon": "🏪",
+              "domain": "iplanet.one",
+              "region": "IN",
+              "currency": "INR",
+              "price": 29900,
+              "title": "Apple 10.9-inch iPad Wi-Fi 64GB - Silver (10th generation)",
+              "url": "https://iplanet.one/products/2022-10-9-inch-ipad-10th-generation-mpq03hn-a"
+            },
+            "amazon": {
+              "id": "amazon",
+              "name": "Amazon.ae",
+              "icon": "📦",
+              "domain": "amazon.ae",
+              "region": "AE",
+              "currency": "AED",
+              "price": 1250,
+              "title": "Amazon.ae",
+              "url": "https://www.amazon.ae/s?k=Apple+iPad+10th+generation&i=electronics"
+            },
+            "istyle": {
+              "id": "istyle",
+              "name": "iSTYLE UAE",
+              "icon": "🍏",
+              "domain": "istyle.ae",
+              "region": "AE",
+              "currency": "AED",
+              "price": 999,
+              "title": "Search: 4 results found for \"iPad 10th generation\" – iSTYLE UAE",
+              "url": "https://istyle.ae/search?type=product&q=iPad+10th+generation"
+            }
+          },
+          "cheapestIN": {
+            "storeId": "timesofindia",
+            "storeName": "Timesofindia",
+            "price": 23999,
+            "url": "https://timesofindia.indiatimes.com/technology/mobiles-tabs/apple-ipad-10th-gen-64gb-wi-fi-available-for-rs-13449-on-amazon-heres-how-you-can-grab-the-deal/articleshow/114226479.cms",
+            "icon": "🏪"
+          },
+          "cheapestAE": {
+            "storeId": "istyle",
+            "storeName": "iSTYLE UAE",
+            "price": 999,
+            "url": "https://istyle.ae/search?type=product&q=iPad+10th+generation",
+            "icon": "🍏"
+          }
+        },
+        "ipad-11-2025": {
+          "id": "ipad-11-2025",
+          "name": "iPad 11 (2025)",
+          "stores": {
+            "apple": {
+              "id": "apple",
+              "name": "Apple Store",
+              "icon": "🍎",
+              "domain": "apple.com",
+              "region": "AE",
+              "currency": "AED",
+              "price": 1999,
+              "title": "Buy iPad",
+              "url": "https://www.apple.com/ae/shop/buy-ipad/ipad"
+            },
+            "amazon": {
+              "id": "amazon",
+              "name": "Amazon.ae",
+              "icon": "📦",
+              "domain": "amazon.ae",
+              "region": "AE",
+              "currency": "AED",
+              "price": 1338,
+              "title": "Amazon.ae",
+              "url": "https://www.amazon.ae/s?k=Apple+iPad+11th+generation+2025+A16&i=electronics"
+            },
+            "jumbo": {
+              "id": "jumbo",
+              "name": "Jumbo Electronics",
+              "icon": "🐘",
+              "domain": "jumbo.ae",
+              "region": "AE",
+              "currency": "AED",
+              "price": 2399,
+              "title": "iPad 11-inch (A16)",
+              "url": "https://www.jumbo.ae/ipad-11-2025"
+            },
+            "istyle": {
+              "id": "istyle",
+              "name": "iSTYLE UAE",
+              "icon": "🍏",
+              "domain": "istyle.ae",
+              "region": "AE",
+              "currency": "AED",
+              "price": 1999,
+              "title": "Buy iPad A16 at best prices Online in Dubai, Abu Dhabi & Sharjah – iSTYLE UAE",
+              "url": "https://istyle.ae/collections/apple-ipad-a16-2025"
+            }
           },
           "cheapestAE": {
             "storeId": "amazon",
