@@ -1,192 +1,6 @@
 {
-  "lastUpdated": "2026-07-25T13:06:49.607Z",
+  "lastUpdated": "2026-07-25T14:56:48.404Z",
   "history": [
-    {
-      "timestamp": "2026-07-12T05:49:46.952Z",
-      "products": {
-        "lenovo-idea-tab": {
-          "id": "lenovo-idea-tab",
-          "name": "Lenovo IdeaTab",
-          "stores": {
-            "lenovo": {
-              "id": "lenovo",
-              "name": "Lenovo.com",
-              "icon": "🖥️",
-              "domain": "lenovo.com",
-              "region": "IN",
-              "currency": "INR",
-              "price": 22999,
-              "title": "Discover the Latest Tablets in India – Affordable and Feature Packed",
-              "url": "https://www.lenovo.com/in/en/tablets/"
-            },
-            "moglix": {
-              "id": "moglix",
-              "name": "Moglix",
-              "icon": "🏪",
-              "domain": "moglix.com",
-              "region": "IN",
-              "currency": "INR",
-              "price": 14699,
-              "title": "Buy Lenovo Tablets Online at Best Prices in India | 12 Jul 2026",
-              "url": "https://www.moglix.com/brands/lenovo/it-electronics/computers/tablets/250100000"
-            }
-          },
-          "cheapestIN": {
-            "storeId": "moglix",
-            "storeName": "Moglix",
-            "price": 14699,
-            "url": "https://www.moglix.com/brands/lenovo/it-electronics/computers/tablets/250100000",
-            "icon": "🏪"
-          }
-        },
-        "lenovo-legion-tab": {
-          "id": "lenovo-legion-tab",
-          "name": "Lenovo Legion Tab",
-          "stores": {}
-        },
-        "xiaomi-pad-7": {
-          "id": "xiaomi-pad-7",
-          "name": "Xiaomi Pad 7",
-          "stores": {
-            "amazon": {
-              "id": "amazon",
-              "name": "Amazon.ae",
-              "icon": "📦",
-              "domain": "amazon.ae",
-              "region": "AE",
-              "currency": "AED",
-              "price": 985,
-              "title": "Amazon.ae",
-              "url": "https://www.amazon.ae/s?k=Xiaomi+Pad+7&i=electronics"
-            }
-          },
-          "cheapestAE": {
-            "storeId": "amazon",
-            "storeName": "Amazon.ae",
-            "price": 985,
-            "url": "https://www.amazon.ae/s?k=Xiaomi+Pad+7&i=electronics",
-            "icon": "📦"
-          }
-        },
-        "ipad-10": {
-          "id": "ipad-10",
-          "name": "iPad 10 (2022)",
-          "stores": {
-            "myg": {
-              "id": "myg",
-              "name": "Myg",
-              "icon": "🏪",
-              "domain": "myg.in",
-              "region": "IN",
-              "currency": "INR",
-              "price": 29900,
-              "title": "Apple iPad | 10th Gen | Wi-Fi Only |  64 GB | Blue | MPQ13HN/A",
-              "url": "https://www.myg.in/tablets/apple/apple-ipad-10th-gen-wi-fi-only-64-gb-blue-mpq13hn-a/"
-            },
-            "amazon": {
-              "id": "amazon",
-              "name": "Amazon.ae",
-              "icon": "📦",
-              "domain": "amazon.ae",
-              "region": "AE",
-              "currency": "AED",
-              "price": 2140.29,
-              "title": "Amazon.ae",
-              "url": "https://www.amazon.ae/s?k=Apple+iPad+10th+generation&i=electronics"
-            },
-            "istyle": {
-              "id": "istyle",
-              "name": "iSTYLE UAE",
-              "icon": "🍏",
-              "domain": "istyle.ae",
-              "region": "AE",
-              "currency": "AED",
-              "price": 999,
-              "title": "Search: 4 results found for \"iPad 10th generation\" – iSTYLE UAE",
-              "url": "https://istyle.ae/search?type=product&q=iPad+10th+generation"
-            }
-          },
-          "cheapestIN": {
-            "storeId": "myg",
-            "storeName": "Myg",
-            "price": 29900,
-            "url": "https://www.myg.in/tablets/apple/apple-ipad-10th-gen-wi-fi-only-64-gb-blue-mpq13hn-a/",
-            "icon": "🏪"
-          },
-          "cheapestAE": {
-            "storeId": "istyle",
-            "storeName": "iSTYLE UAE",
-            "price": 999,
-            "url": "https://istyle.ae/search?type=product&q=iPad+10th+generation",
-            "icon": "🍏"
-          }
-        },
-        "ipad-11-2025": {
-          "id": "ipad-11-2025",
-          "name": "iPad 11 (2025)",
-          "stores": {
-            "apple": {
-              "id": "apple",
-              "name": "Apple Store",
-              "icon": "🍎",
-              "domain": "apple.com",
-              "region": "AE",
-              "currency": "AED",
-              "price": 1999,
-              "title": "Buy iPad",
-              "url": "https://www.apple.com/ae/shop/buy-ipad/ipad"
-            },
-            "myimaginestore": {
-              "id": "myimaginestore",
-              "name": "Myimaginestore",
-              "icon": "🏪",
-              "domain": "myimaginestore.com",
-              "region": "IN",
-              "currency": "INR",
-              "price": 49900,
-              "title": "Apple iPad 11 Inch A16 | Apple iPad 11 Inch A16 Price",
-              "url": "https://www.myimaginestore.com/ipad-11"
-            },
-            "amazon": {
-              "id": "amazon",
-              "name": "Amazon.ae",
-              "icon": "📦",
-              "domain": "amazon.ae",
-              "region": "AE",
-              "currency": "AED",
-              "price": 1899,
-              "title": "Amazon.ae",
-              "url": "https://www.amazon.ae/s?k=Apple+iPad+11th+generation+2025+A16&i=electronics"
-            },
-            "jumbo": {
-              "id": "jumbo",
-              "name": "Jumbo Electronics",
-              "icon": "🐘",
-              "domain": "jumbo.ae",
-              "region": "AE",
-              "currency": "AED",
-              "price": 1999.001899,
-              "title": "iPad 11-inch (A16)",
-              "url": "https://www.jumbo.ae/ipad-11-2025"
-            }
-          },
-          "cheapestIN": {
-            "storeId": "myimaginestore",
-            "storeName": "Myimaginestore",
-            "price": 49900,
-            "url": "https://www.myimaginestore.com/ipad-11",
-            "icon": "🏪"
-          },
-          "cheapestAE": {
-            "storeId": "amazon",
-            "storeName": "Amazon.ae",
-            "price": 1899,
-            "url": "https://www.amazon.ae/s?k=Apple+iPad+11th+generation+2025+A16&i=electronics",
-            "icon": "📦"
-          }
-        }
-      }
-    },
     {
       "timestamp": "2026-07-12T08:05:00.054Z",
       "products": {
@@ -38872,6 +38686,144 @@
             "price": 10000,
             "url": "https://www.flipkart.com/search?q=Apple+iPad+A16+2025",
             "icon": "🛒"
+          },
+          "cheapestAE": {
+            "storeId": "amazon",
+            "storeName": "Amazon.ae",
+            "price": 1522.26,
+            "url": "https://www.amazon.ae/s?k=Apple+iPad+11th+generation+2025+A16&i=electronics",
+            "icon": "📦"
+          }
+        }
+      }
+    },
+    {
+      "timestamp": "2026-07-25T14:56:48.404Z",
+      "products": {
+        "lenovo-idea-tab": {
+          "id": "lenovo-idea-tab",
+          "name": "Lenovo IdeaTab",
+          "stores": {}
+        },
+        "lenovo-legion-tab": {
+          "id": "lenovo-legion-tab",
+          "name": "Lenovo Legion Tab",
+          "stores": {}
+        },
+        "xiaomi-pad-7": {
+          "id": "xiaomi-pad-7",
+          "name": "Xiaomi Pad 7",
+          "stores": {
+            "amazon": {
+              "id": "amazon",
+              "name": "Amazon.ae",
+              "icon": "📦",
+              "domain": "amazon.ae",
+              "region": "AE",
+              "currency": "AED",
+              "price": 1110,
+              "title": "Amazon.ae",
+              "url": "https://www.amazon.ae/s?k=Xiaomi+Pad+7&i=electronics"
+            }
+          },
+          "cheapestAE": {
+            "storeId": "amazon",
+            "storeName": "Amazon.ae",
+            "price": 1110,
+            "url": "https://www.amazon.ae/s?k=Xiaomi+Pad+7&i=electronics",
+            "icon": "📦"
+          }
+        },
+        "ipad-10": {
+          "id": "ipad-10",
+          "name": "iPad 10 (2022)",
+          "stores": {
+            "apple": {
+              "id": "apple",
+              "name": "Apple Store",
+              "icon": "🍎",
+              "domain": "apple.com",
+              "region": "IN",
+              "currency": "INR",
+              "price": 49900,
+              "title": "Buy iPad",
+              "url": "https://www.apple.com/in/shop/buy-ipad/ipad"
+            },
+            "amazon": {
+              "id": "amazon",
+              "name": "Amazon.ae",
+              "icon": "📦",
+              "domain": "amazon.ae",
+              "region": "AE",
+              "currency": "AED",
+              "price": 1715.49,
+              "title": "Amazon.ae",
+              "url": "https://www.amazon.ae/s?k=Apple+iPad+10th+generation&i=electronics"
+            }
+          },
+          "cheapestIN": {
+            "storeId": "apple",
+            "storeName": "Apple Store",
+            "price": 49900,
+            "url": "https://www.apple.com/in/shop/buy-ipad/ipad",
+            "icon": "🍎"
+          },
+          "cheapestAE": {
+            "storeId": "amazon",
+            "storeName": "Amazon.ae",
+            "price": 1715.49,
+            "url": "https://www.amazon.ae/s?k=Apple+iPad+10th+generation&i=electronics",
+            "icon": "📦"
+          }
+        },
+        "ipad-11-2025": {
+          "id": "ipad-11-2025",
+          "name": "iPad 11 (2025)",
+          "stores": {
+            "amazon": {
+              "id": "amazon",
+              "name": "Amazon.ae",
+              "icon": "📦",
+              "domain": "amazon.ae",
+              "region": "AE",
+              "currency": "AED",
+              "price": 1522.26,
+              "title": "Amazon.ae",
+              "url": "https://www.amazon.ae/s?k=Apple+iPad+11th+generation+2025+A16&i=electronics"
+            },
+            "apple": {
+              "id": "apple",
+              "name": "Apple Store",
+              "icon": "🍎",
+              "domain": "apple.com",
+              "region": "AE",
+              "currency": "AED",
+              "price": 1999,
+              "title": "Buy iPad",
+              "url": "https://www.apple.com/ae/shop/buy-ipad/ipad"
+            },
+            "jumbo": {
+              "id": "jumbo",
+              "name": "Jumbo Electronics",
+              "icon": "🐘",
+              "domain": "jumbo.ae",
+              "region": "AE",
+              "currency": "AED",
+              "price": 1999.001899,
+              "title": "iPad 11-inch (A16)",
+              "url": "https://www.jumbo.ae/ipad-11-2025"
+            },
+            "istyle": {
+              "id": "istyle",
+              "name": "iSTYLE UAE",
+              "icon": "🍏",
+              "domain": "istyle.ae",
+              "region": "AE",
+              "currency": "AED",
+              "price": 1699,
+              "title": "Buy iPad A16 at best prices Online in Dubai, Abu Dhabi & Sharjah – iSTYLE UAE",
+              "url": "https://istyle.ae/collections/apple-ipad-a16-2025"
+            }
           },
           "cheapestAE": {
             "storeId": "amazon",
