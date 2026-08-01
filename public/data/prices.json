@@ -1,211 +1,6 @@
 {
-  "lastUpdated": "2026-08-01T08:07:59.169Z",
+  "lastUpdated": "2026-08-01T10:29:01.154Z",
   "history": [
-    {
-      "timestamp": "2026-07-18T08:46:00.086Z",
-      "products": {
-        "lenovo-idea-tab": {
-          "id": "lenovo-idea-tab",
-          "name": "Lenovo IdeaTab",
-          "stores": {
-            "lenovo": {
-              "id": "lenovo",
-              "name": "Lenovo.com",
-              "icon": "🖥️",
-              "domain": "lenovo.com",
-              "region": "IN",
-              "currency": "INR",
-              "price": 24000,
-              "title": "Discover the Latest Tablets in India – Affordable and Feature Packed",
-              "url": "https://www.lenovo.com/in/en/tablets/"
-            },
-            "moglix": {
-              "id": "moglix",
-              "name": "Moglix",
-              "icon": "🏪",
-              "domain": "moglix.com",
-              "region": "IN",
-              "currency": "INR",
-              "price": 16999,
-              "title": "Buy Lenovo Tablets Online at Best Prices in India | 16 Jul 2026",
-              "url": "https://www.moglix.com/brands/lenovo/it-electronics/computers/tablets/250100000"
-            },
-            "amazon": {
-              "id": "amazon",
-              "name": "Amazon.ae",
-              "icon": "📦",
-              "domain": "amazon.ae",
-              "region": "AE",
-              "currency": "AED",
-              "price": 2230,
-              "title": "Amazon.ae",
-              "url": "https://www.amazon.ae/s?k=Lenovo+IdeaTab&i=electronics"
-            }
-          },
-          "cheapestIN": {
-            "storeId": "moglix",
-            "storeName": "Moglix",
-            "price": 16999,
-            "url": "https://www.moglix.com/brands/lenovo/it-electronics/computers/tablets/250100000",
-            "icon": "🏪"
-          },
-          "cheapestAE": {
-            "storeId": "amazon",
-            "storeName": "Amazon.ae",
-            "price": 2230,
-            "url": "https://www.amazon.ae/s?k=Lenovo+IdeaTab&i=electronics",
-            "icon": "📦"
-          }
-        },
-        "lenovo-legion-tab": {
-          "id": "lenovo-legion-tab",
-          "name": "Lenovo Legion Tab",
-          "stores": {
-            "amazon": {
-              "id": "amazon",
-              "name": "Amazon.ae",
-              "icon": "📦",
-              "domain": "amazon.ae",
-              "region": "AE",
-              "currency": "AED",
-              "price": 2007.34,
-              "title": "Amazon.ae",
-              "url": "https://www.amazon.ae/s?k=Lenovo+Legion+Tab&i=electronics"
-            }
-          },
-          "cheapestAE": {
-            "storeId": "amazon",
-            "storeName": "Amazon.ae",
-            "price": 2007.34,
-            "url": "https://www.amazon.ae/s?k=Lenovo+Legion+Tab&i=electronics",
-            "icon": "📦"
-          }
-        },
-        "xiaomi-pad-7": {
-          "id": "xiaomi-pad-7",
-          "name": "Xiaomi Pad 7",
-          "stores": {
-            "amazon": {
-              "id": "amazon",
-              "name": "Amazon.ae",
-              "icon": "📦",
-              "domain": "amazon.ae",
-              "region": "AE",
-              "currency": "AED",
-              "price": 1105.15,
-              "title": "Amazon.ae",
-              "url": "https://www.amazon.ae/s?k=Xiaomi+Pad+7&i=electronics"
-            }
-          },
-          "cheapestAE": {
-            "storeId": "amazon",
-            "storeName": "Amazon.ae",
-            "price": 1105.15,
-            "url": "https://www.amazon.ae/s?k=Xiaomi+Pad+7&i=electronics",
-            "icon": "📦"
-          }
-        },
-        "ipad-10": {
-          "id": "ipad-10",
-          "name": "iPad 10 (2022)",
-          "stores": {
-            "timesofindia": {
-              "id": "timesofindia",
-              "name": "Timesofindia",
-              "icon": "🏪",
-              "domain": "timesofindia.indiatimes.com",
-              "region": "IN",
-              "currency": "INR",
-              "price": 23999,
-              "title": "Apple iPad 10th Gen (64GB, Wi-Fi) available for Rs 13,449 on Amazon; here’s how you can grab the dea",
-              "url": "https://timesofindia.indiatimes.com/technology/mobiles-tabs/apple-ipad-10th-gen-64gb-wi-fi-available-for-rs-13449-on-amazon-heres-how-you-can-grab-the-deal/articleshow/114226479.cms"
-            },
-            "amazon": {
-              "id": "amazon",
-              "name": "Amazon.ae",
-              "icon": "📦",
-              "domain": "amazon.ae",
-              "region": "AE",
-              "currency": "AED",
-              "price": 1848.65,
-              "title": "Amazon.ae",
-              "url": "https://www.amazon.ae/s?k=Apple+iPad+10th+generation&i=electronics"
-            }
-          },
-          "cheapestIN": {
-            "storeId": "timesofindia",
-            "storeName": "Timesofindia",
-            "price": 23999,
-            "url": "https://timesofindia.indiatimes.com/technology/mobiles-tabs/apple-ipad-10th-gen-64gb-wi-fi-available-for-rs-13449-on-amazon-heres-how-you-can-grab-the-deal/articleshow/114226479.cms",
-            "icon": "🏪"
-          },
-          "cheapestAE": {
-            "storeId": "amazon",
-            "storeName": "Amazon.ae",
-            "price": 1848.65,
-            "url": "https://www.amazon.ae/s?k=Apple+iPad+10th+generation&i=electronics",
-            "icon": "📦"
-          }
-        },
-        "ipad-11-2025": {
-          "id": "ipad-11-2025",
-          "name": "iPad 11 (2025)",
-          "stores": {
-            "apple": {
-              "id": "apple",
-              "name": "Apple Store",
-              "icon": "🍎",
-              "domain": "apple.com",
-              "region": "AE",
-              "currency": "AED",
-              "price": 1999,
-              "title": "Buy iPad",
-              "url": "https://www.apple.com/ae/shop/buy-ipad/ipad"
-            },
-            "amazon": {
-              "id": "amazon",
-              "name": "Amazon.ae",
-              "icon": "📦",
-              "domain": "amazon.ae",
-              "region": "AE",
-              "currency": "AED",
-              "price": 1607.36,
-              "title": "Amazon.ae",
-              "url": "https://www.amazon.ae/s?k=Apple+iPad+11th+generation+2025+A16&i=electronics"
-            },
-            "jumbo": {
-              "id": "jumbo",
-              "name": "Jumbo Electronics",
-              "icon": "🐘",
-              "domain": "jumbo.ae",
-              "region": "AE",
-              "currency": "AED",
-              "price": 1999.001899,
-              "title": "iPad 11-inch (A16)",
-              "url": "https://www.jumbo.ae/ipad-11-2025"
-            },
-            "istyle": {
-              "id": "istyle",
-              "name": "iSTYLE UAE",
-              "icon": "🍏",
-              "domain": "istyle.ae",
-              "region": "AE",
-              "currency": "AED",
-              "price": 1699,
-              "title": "Buy iPad A16 at best prices Online in Dubai, Abu Dhabi & Sharjah – iSTYLE UAE",
-              "url": "https://istyle.ae/collections/apple-ipad-a16-2025"
-            }
-          },
-          "cheapestAE": {
-            "storeId": "amazon",
-            "storeName": "Amazon.ae",
-            "price": 1607.36,
-            "url": "https://www.amazon.ae/s?k=Apple+iPad+11th+generation+2025+A16&i=electronics",
-            "icon": "📦"
-          }
-        }
-      }
-    },
     {
       "timestamp": "2026-07-18T10:12:51.028Z",
       "products": {
@@ -35924,6 +35719,193 @@
               "price": 23999,
               "title": "Apple iPad 10th Gen (64GB, Wi-Fi) available for Rs 13,449 on Amazon; here’s how you can grab the dea",
               "url": "https://timesofindia.indiatimes.com/technology/mobiles-tabs/apple-ipad-10th-gen-64gb-wi-fi-available-for-rs-13449-on-amazon-heres-how-you-can-grab-the-deal/articleshow/114226479.cms"
+            },
+            "amazon": {
+              "id": "amazon",
+              "name": "Amazon.ae",
+              "icon": "📦",
+              "domain": "amazon.ae",
+              "region": "AE",
+              "currency": "AED",
+              "price": 1715.49,
+              "title": "Amazon.ae",
+              "url": "https://www.amazon.ae/s?k=Apple+iPad+10th+generation&i=electronics"
+            }
+          },
+          "cheapestIN": {
+            "storeId": "timesofindia",
+            "storeName": "Timesofindia",
+            "price": 23999,
+            "url": "https://timesofindia.indiatimes.com/technology/mobiles-tabs/apple-ipad-10th-gen-64gb-wi-fi-available-for-rs-13449-on-amazon-heres-how-you-can-grab-the-deal/articleshow/114226479.cms",
+            "icon": "🏪"
+          },
+          "cheapestAE": {
+            "storeId": "amazon",
+            "storeName": "Amazon.ae",
+            "price": 1715.49,
+            "url": "https://www.amazon.ae/s?k=Apple+iPad+10th+generation&i=electronics",
+            "icon": "📦"
+          }
+        },
+        "ipad-11-2025": {
+          "id": "ipad-11-2025",
+          "name": "iPad 11 (2025)",
+          "stores": {
+            "apple": {
+              "id": "apple",
+              "name": "Apple Store",
+              "icon": "🍎",
+              "domain": "apple.com",
+              "region": "AE",
+              "currency": "AED",
+              "price": 1999,
+              "title": "Buy iPad",
+              "url": "https://www.apple.com/ae/shop/buy-ipad/ipad"
+            },
+            "amazon": {
+              "id": "amazon",
+              "name": "Amazon.ae",
+              "icon": "📦",
+              "domain": "amazon.ae",
+              "region": "AE",
+              "currency": "AED",
+              "price": 2057,
+              "title": "Amazon.ae",
+              "url": "https://www.amazon.ae/s?k=Apple+iPad+11th+generation+2025+A16&i=electronics"
+            },
+            "jumbo": {
+              "id": "jumbo",
+              "name": "Jumbo Electronics",
+              "icon": "🐘",
+              "domain": "jumbo.ae",
+              "region": "AE",
+              "currency": "AED",
+              "price": 1999.001899,
+              "title": "iPad 11-inch (A16)",
+              "url": "https://www.jumbo.ae/ipad-11-2025"
+            },
+            "istyle": {
+              "id": "istyle",
+              "name": "iSTYLE UAE",
+              "icon": "🍏",
+              "domain": "istyle.ae",
+              "region": "AE",
+              "currency": "AED",
+              "price": 1999,
+              "title": "Buy iPad A16 at best prices Online in Dubai, Abu Dhabi & Sharjah – iSTYLE UAE",
+              "url": "https://istyle.ae/collections/apple-ipad-a16-2025"
+            }
+          },
+          "cheapestAE": {
+            "storeId": "istyle",
+            "storeName": "iSTYLE UAE",
+            "price": 1999,
+            "url": "https://istyle.ae/collections/apple-ipad-a16-2025",
+            "icon": "🍏"
+          }
+        }
+      }
+    },
+    {
+      "timestamp": "2026-08-01T10:29:01.154Z",
+      "products": {
+        "lenovo-idea-tab": {
+          "id": "lenovo-idea-tab",
+          "name": "Lenovo IdeaTab",
+          "stores": {
+            "lenovo": {
+              "id": "lenovo",
+              "name": "Lenovo.com",
+              "icon": "🖥️",
+              "domain": "lenovo.com",
+              "region": "IN",
+              "currency": "INR",
+              "price": 26998,
+              "title": "Discover the Latest Tablets in India – Affordable and Feature Packed",
+              "url": "https://www.lenovo.com/in/en/tablets/"
+            }
+          },
+          "cheapestIN": {
+            "storeId": "lenovo",
+            "storeName": "Lenovo.com",
+            "price": 26998,
+            "url": "https://www.lenovo.com/in/en/tablets/",
+            "icon": "🖥️"
+          }
+        },
+        "lenovo-legion-tab": {
+          "id": "lenovo-legion-tab",
+          "name": "Lenovo Legion Tab",
+          "stores": {
+            "amazon": {
+              "id": "amazon",
+              "name": "Amazon.ae",
+              "icon": "📦",
+              "domain": "amazon.ae",
+              "region": "AE",
+              "currency": "AED",
+              "price": 2227.42,
+              "title": "Amazon.ae",
+              "url": "https://www.amazon.ae/s?k=Lenovo+Legion+Tab&i=electronics"
+            }
+          },
+          "cheapestAE": {
+            "storeId": "amazon",
+            "storeName": "Amazon.ae",
+            "price": 2227.42,
+            "url": "https://www.amazon.ae/s?k=Lenovo+Legion+Tab&i=electronics",
+            "icon": "📦"
+          }
+        },
+        "xiaomi-pad-7": {
+          "id": "xiaomi-pad-7",
+          "name": "Xiaomi Pad 7",
+          "stores": {
+            "amazon": {
+              "id": "amazon",
+              "name": "Amazon.ae",
+              "icon": "📦",
+              "domain": "amazon.ae",
+              "region": "AE",
+              "currency": "AED",
+              "price": 1089.9,
+              "title": "Amazon.ae",
+              "url": "https://www.amazon.ae/s?k=Xiaomi+Pad+7&i=electronics"
+            }
+          },
+          "cheapestAE": {
+            "storeId": "amazon",
+            "storeName": "Amazon.ae",
+            "price": 1089.9,
+            "url": "https://www.amazon.ae/s?k=Xiaomi+Pad+7&i=electronics",
+            "icon": "📦"
+          }
+        },
+        "ipad-10": {
+          "id": "ipad-10",
+          "name": "iPad 10 (2022)",
+          "stores": {
+            "timesofindia": {
+              "id": "timesofindia",
+              "name": "Timesofindia",
+              "icon": "🏪",
+              "domain": "timesofindia.indiatimes.com",
+              "region": "IN",
+              "currency": "INR",
+              "price": 23999,
+              "title": "Apple iPad 10th Gen (64GB, Wi-Fi) available for Rs 13,449 on Amazon; here’s how you can grab the dea",
+              "url": "https://timesofindia.indiatimes.com/technology/mobiles-tabs/apple-ipad-10th-gen-64gb-wi-fi-available-for-rs-13449-on-amazon-heres-how-you-can-grab-the-deal/articleshow/114226479.cms"
+            },
+            "myg": {
+              "id": "myg",
+              "name": "Myg",
+              "icon": "🏪",
+              "domain": "myg.in",
+              "region": "IN",
+              "currency": "INR",
+              "price": 29900,
+              "title": "Apple iPad | 10th Gen | Wi-Fi Only |  64 GB | Blue | MPQ13HN/A",
+              "url": "https://www.myg.in/tablets/apple/apple-ipad-10th-gen-wi-fi-only-64-gb-blue-mpq13hn-a/"
             },
             "amazon": {
               "id": "amazon",
